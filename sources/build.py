@@ -154,6 +154,6 @@ for font in IMPORT.glob("*.ttf"):
 
     finalVersion.save(EXPORT / str(outputTTF).replace("BIZ-","BIZ"))
 
-shutil.rmtree("fonts/temp")
+shutil.rmtree("temp")
 shutil.rmtree("master_ufo")
 shutil.rmtree("instance_ufo")
