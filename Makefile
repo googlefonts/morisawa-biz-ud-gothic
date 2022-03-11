@@ -17,7 +17,7 @@ build: build.stamp
 venv: venv/touchfile
 
 build.stamp: venv .init.stamp sources/build.py
-	. venv/bin/activate; python3 sources/build.py && touch build.stamp
+	. venv/bin/activate; rm -rf fonts/; python3 sources/build.py && touch build.stamp
 
 .init.stamp: venv
 	. venv/bin/activate; python3 scripts/first-run.py
