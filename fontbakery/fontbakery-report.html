@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="utf-8">
+                        <title>Fontbakery Check Report</title>
+                        <style>
+                            
+            html {
+                font-family: sans-serif;
+            }
+
+            h2 {
+                margin-top: 2em;
+            }
+
+            h3 {
+                margin-bottom: 1px;
+            }
+
+            table {
+                border-collapse: collapse;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 0.5em
+            }
+
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            tr {
+                text-align: left;
+            }
+
+            ul {
+                margin-top: 0;
+            }
+
+            .details_item {
+                list-style: none;
+                display: flex;
+                align-items: baseline;
+            }
+
+            .details_indicator {
+                flex: 0 0 5em;
+                font-weight: bold;
+                padding-right: 0.5em;
+                text-align: right;
+            }
+
+            .details_text {
+                flex: 1 0;
+            }
+            
+                        </style>
+                    </head>
+                    <body>
+                    <h1>Fontbakery Technical Report</h1>
+<div>If you think a check is flawed or have an idea for a check, please  file an issue at <a href='https://github.com/googlefonts/fontbakery/issues'>https://github.com/googlefonts/fontbakery/issues</a> and remember to include a pointer to the repo and branch you're checking.</div>
+<h2>Summary</h2>
+            <table>
+            <tr>
+                <th>💥 ERROR</th>
+                <th>🔥 FAIL</th>
+                <th>⚠️ WARN</th>
+                <th>⏩ SKIP</th>
+                <th>ℹ️ INFO</th>
+                <th>✔️ PASS</th>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>38</td>
+                <td>49</td>
+                <td>570</td>
+                <td>36</td>
+                <td>358</td>
+            </tr>
+            <tr>
+                <td>0%</td>
+                <td>4%</td>
+                <td>5%</td>
+                <td>64%</td>
+                <td>4%</td>
+                <td>40%</td>
+            </tr>
+            </table>
+            
+<p><strong>Note:</strong> The following loglevels were omitted in this report: SKIP, INFO, PASS, DEBUG</p>
+<h2>&lt;Section: Google Fonts&gt; 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️</h2>
+<h3>Checking file is named canonically.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/canonical_filename&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Style name used in &quot;fonts/ttf/BIZ-UDGothic-Regular.ttf&quot; is not canonical. You should rebuild the font using any of the following style names: &quot;Thin&quot;, &quot;ExtraLight&quot;, &quot;Light&quot;, &quot;Regular&quot;, &quot;Medium&quot;, &quot;SemiBold&quot;, &quot;Bold&quot;, &quot;ExtraBold&quot;, &quot;Black&quot;, &quot;Thin Italic&quot;, &quot;ExtraLight Italic&quot;, &quot;Light Italic&quot;, &quot;Italic&quot;, &quot;Medium Italic&quot;, &quot;SemiBold Italic&quot;, &quot;Bold Italic&quot;, &quot;ExtraBold Italic&quot;, &quot;Black Italic&quot;. [code: bad-static-filename]</p>
+</span></li></ul></div></details>
+<h3>Checking OS/2 fsType does not impose restrictions.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/fstype&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>In this font fsType is set to 4 meaning that:
+The font may be embedded, and temporarily loaded on the remote system, but documents that use it must not be editable.</p>
+<p>No such DRM restrictions can be enabled on the Google Fonts collection, so the fsType field must be set to zero (Installable Embedding) instead. [code: drm]</p>
+</span></li></ul></div></details>
+<h3>Check `Google Fonts Latin Core` glyph coverage.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/glyph_coverage&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/BIZUDGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Missing required codepoints:</p>
+<pre><code>- 0x2215 (DIVISION SLASH)
+</code></pre>
+<p>[code: missing-codepoints]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZUDPGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Missing required codepoints:</p>
+<pre><code>- 0x2215 (DIVISION SLASH)
+</code></pre>
+<p>[code: missing-codepoints]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZUDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Missing required codepoints:</p>
+<pre><code>- 0x2215 (DIVISION SLASH)
+</code></pre>
+<p>[code: missing-codepoints]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZUDPGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Missing required codepoints:</p>
+<pre><code>- 0x2215 (DIVISION SLASH)
+</code></pre>
+<p>[code: missing-codepoints]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Missing required codepoints:</p>
+<pre><code>- 0x00B5 (MICRO SIGN)
+
+- 0x0131 (LATIN SMALL LETTER DOTLESS I)
+
+- 0x02C6 (MODIFIER LETTER CIRCUMFLEX ACCENT)
+
+- 0x02DA (RING ABOVE)
+
+- 0x201A (SINGLE LOW-9 QUOTATION MARK)
+
+- 0x201E (DOUBLE LOW-9 QUOTATION MARK)
+
+- 0x2039 (SINGLE LEFT-POINTING ANGLE QUOTATION MARK)
+
+- 0x203A (SINGLE RIGHT-POINTING ANGLE QUOTATION MARK)
+
+- 0x2044 (FRACTION SLASH)
+
+- 0x2074 (SUPERSCRIPT FOUR)
+
+- And 0x2215 (DIVISION SLASH)
+</code></pre>
+<p>[code: missing-codepoints]</p>
+</span></li></ul></div></details>
+<h3>Substitute copyright, registered and trademark symbols in name table entries.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/name/unwanted_chars&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>NAMEID #0 contains symbols that should be replaced by '(c)'. [code: unwanted-chars]</p>
+</span></li></ul></div></details>
+<h3>Check copyright namerecords match license file.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/name/license&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>License file OFL.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 1 (MACINTOSH) is not specified for that. Value was: &quot;Google font&quot; Must be changed to &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL&quot; [code: wrong]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>License file OFL.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 3 (WINDOWS) is not specified for that. Value was: &quot;Google font&quot; Must be changed to &quot;This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL&quot; [code: wrong]</p>
+</span></li></ul></div></details>
+<h3>Ensure files are not too large.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/file_size&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Font file is 4.4Mb; ideally it should be less than 1.0Mb [code: large-font]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDPGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Font file is 4.4Mb; ideally it should be less than 1.0Mb [code: large-font]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Font file is 4.4Mb; ideally it should be less than 1.0Mb [code: large-font]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDPGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Font file is 4.4Mb; ideally it should be less than 1.0Mb [code: large-font]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Font file is 4.4Mb; ideally it should be less than 1.0Mb [code: large-font]</p>
+</span></li></ul></div></details>
+<h3>Version format is correct in 'name' table?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/name/version_format&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The NameID.VERSION_STRING (nameID=5) value must follow the pattern &quot;Version X.Y&quot; with X.Y greater than or equal to 1.000. Current version string is: &quot;Version 001&quot; [code: bad-version-strings]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The NameID.VERSION_STRING (nameID=5) value must follow the pattern &quot;Version X.Y&quot; with X.Y greater than or equal to 1.000. Current version string is: &quot;Version 001&quot; [code: bad-version-strings]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The NameID.VERSION_STRING (nameID=5) value must follow the pattern &quot;Version X.Y&quot; with X.Y greater than or equal to 1.000. Current version string is: &quot;Version 001&quot; [code: bad-version-strings]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The NameID.VERSION_STRING (nameID=5) value must follow the pattern &quot;Version X.Y&quot; with X.Y greater than or equal to 1.000. Current version string is: &quot;Version 001&quot; [code: bad-version-strings]</p>
+</span></li></ul></div></details>
+<h3>Is the Grid-fitting and Scan-conversion Procedure ('gasp') table set to optimize rendering?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gasp&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The gasp table has a range of 7 that may be unneccessary. [code: non-ffff-range]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDPGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The gasp table has a range of 7 that may be unneccessary. [code: non-ffff-range]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The gasp table has a range of 7 that may be unneccessary. [code: non-ffff-range]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDPGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The gasp table has a range of 7 that may be unneccessary. [code: non-ffff-range]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The gasp table has a range of 7 that may be unneccessary. [code: non-ffff-range]</p>
+</span></li></ul></div></details>
+<h3>Are there non-ASCII characters in ASCII-only NAME table entries?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/name/ascii_only_entries&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Bad string at [nameID 0, 'mac_roman']: 'b'Font © Copyright 2019 Morisawa Inc. All rights reserved.'' [code: bad-string]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Bad string at [nameID 0, 'utf_16_be']: 'b'Font © Copyright 2019 Morisawa Inc. All rights reserved.'' [code: bad-string]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Bad string at [nameID 0, 'utf_16_be']: 'b'Font © Copyright 2019 Morisawa Inc. All rights reserved.'' [code: bad-string]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>There are 3 strings containing non-ASCII characters in the ASCII-only NAME table entries. [code: non-ascii-strings]</p>
+</span></li></ul></div></details>
+<h3>Copyright notices match canonical pattern in fonts</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/font_copyright&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Name Table entry: Copyright notices should match a pattern similar to: &quot;Copyright 2019 The Familyname Project Authors (git url)&quot;
+But instead we have got:
+&quot;Font © Copyright 2019 Morisawa Inc. All rights reserved.&quot; [code: bad-notice-format]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Name Table entry: Copyright notices should match a pattern similar to: &quot;Copyright 2019 The Familyname Project Authors (git url)&quot;
+But instead we have got:
+&quot;Font ? Copyright 2019 Morisawa Inc. All rights reserved.&quot; [code: bad-notice-format]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Name Table entry: Copyright notices should match a pattern similar to: &quot;Copyright 2019 The Familyname Project Authors (git url)&quot;
+But instead we have got:
+&quot;Font © Copyright 2019 Morisawa Inc. All rights reserved.&quot; [code: bad-notice-format]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Name Table entry: Copyright notices should match a pattern similar to: &quot;Copyright 2019 The Familyname Project Authors (git url)&quot;
+But instead we have got:
+&quot;Font © Copyright 2019 Morisawa Inc. All rights reserved.&quot; [code: bad-notice-format]</p>
+</span></li></ul></div></details>
+<h3>Check name table: FONT_FAMILY_NAME entries.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/name/familyname&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/BIZUDGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Entry [FONT_FAMILY_NAME(1):WINDOWS(3)] on the &quot;name&quot; table: Expected &quot;BIZUD Gothic&quot; but got &quot;BIZ UDGothic&quot;. [code: mismatch]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Entry [FONT_FAMILY_NAME(1):WINDOWS(3)] on the &quot;name&quot; table: Expected &quot;BIZUD Gothic&quot; but got &quot;BIZ UDGothic&quot;. [code: mismatch]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZUDPGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Entry [FONT_FAMILY_NAME(1):WINDOWS(3)] on the &quot;name&quot; table: Expected &quot;BIZUDP Gothic&quot; but got &quot;BIZ UDPGothic&quot;. [code: mismatch]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Entry [FONT_FAMILY_NAME(1):WINDOWS(3)] on the &quot;name&quot; table: Expected &quot;BIZUDP Gothic&quot; but got &quot;BIZ UDPGothic&quot;. [code: mismatch]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZUDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Entry [FONT_FAMILY_NAME(1):WINDOWS(3)] on the &quot;name&quot; table: Expected &quot;BIZUD Gothic&quot; but got &quot;BIZ UDGothic&quot;. [code: mismatch]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Entry [FONT_FAMILY_NAME(1):WINDOWS(3)] on the &quot;name&quot; table: Expected &quot;BIZUD Gothic&quot; but got &quot;BIZ UDGothic&quot;. [code: mismatch]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZUDPGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Entry [FONT_FAMILY_NAME(1):WINDOWS(3)] on the &quot;name&quot; table: Expected &quot;BIZUDP Gothic&quot; but got &quot;BIZ UDPGothic&quot;. [code: mismatch]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Entry [FONT_FAMILY_NAME(1):WINDOWS(3)] on the &quot;name&quot; table: Expected &quot;BIZUDP Gothic&quot; but got &quot;BIZ UDPGothic&quot;. [code: mismatch]</p>
+</span></li></ul></div></details>
+<h3>Check name table: FULL_FONT_NAME entries.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/name/fullfontname&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/BIZUDGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>[FULL_FONT_NAME(4):WINDOWS(3)]
+Expected: &quot;BIZUD Gothic Bold&quot;
+But got:  &quot;BIZ UDGothic Bold&quot; [code: bad-entry]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>[FULL_FONT_NAME(4):WINDOWS(3)]
+Expected: &quot;BIZUD Gothic Bold&quot;
+But got:  &quot;BIZ UDゴシック Bold&quot; [code: bad-entry]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZUDPGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>[FULL_FONT_NAME(4):WINDOWS(3)]
+Expected: &quot;BIZUDP Gothic Bold&quot;
+But got:  &quot;BIZ UDPGothic Bold&quot; [code: bad-entry]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>[FULL_FONT_NAME(4):WINDOWS(3)]
+Expected: &quot;BIZUDP Gothic Bold&quot;
+But got:  &quot;BIZ UDPゴシック Bold&quot; [code: bad-entry]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZUDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>[FULL_FONT_NAME(4):WINDOWS(3)]
+Expected: &quot;BIZUD Gothic Regular&quot;
+But got:  &quot;BIZ UDGothic&quot; [code: bad-entry]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>[FULL_FONT_NAME(4):WINDOWS(3)]
+Expected: &quot;BIZUD Gothic Regular&quot;
+But got:  &quot;BIZ UDゴシック&quot; [code: bad-entry]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZUDPGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>[FULL_FONT_NAME(4):WINDOWS(3)]
+Expected: &quot;BIZUDP Gothic Regular&quot;
+But got:  &quot;BIZ UDPGothic&quot; [code: bad-entry]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>[FULL_FONT_NAME(4):WINDOWS(3)]
+Expected: &quot;BIZUDP Gothic Regular&quot;
+But got:  &quot;BIZ UDPゴシック&quot; [code: bad-entry]</p>
+</span></li></ul></div></details>
+<h3>Font enables smart dropout control in "prep" table instructions?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/smart_dropout&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/BIZUDGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The 'prep' table does not contain TrueType instructions enabling smart dropout control. To fix, export the font with autohinting enabled, or run ttfautohint on the font, or run the <code>gftools fix-nonhinting</code> script. [code: lacks-smart-dropout]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZUDPGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The 'prep' table does not contain TrueType instructions enabling smart dropout control. To fix, export the font with autohinting enabled, or run ttfautohint on the font, or run the <code>gftools fix-nonhinting</code> script. [code: lacks-smart-dropout]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZUDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The 'prep' table does not contain TrueType instructions enabling smart dropout control. To fix, export the font with autohinting enabled, or run ttfautohint on the font, or run the <code>gftools fix-nonhinting</code> script. [code: lacks-smart-dropout]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZUDPGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The 'prep' table does not contain TrueType instructions enabling smart dropout control. To fix, export the font with autohinting enabled, or run ttfautohint on the font, or run the <code>gftools fix-nonhinting</code> script. [code: lacks-smart-dropout]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The 'prep' table does not contain TrueType instructions enabling smart dropout control. To fix, export the font with autohinting enabled, or run ttfautohint on the font, or run the <code>gftools fix-nonhinting</code> script. [code: lacks-smart-dropout]</p>
+</span></li></ul></div></details>
+<h3>Are there caret positions declared for every ligature?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/ligature_carets&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GDEF table is missing, but it is mandatory to declare it on fonts that provide ligature glyphs because the caret (text cursor) positioning for each ligature must be provided in this table. [code: GDEF-missing]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDPGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GDEF table is missing, but it is mandatory to declare it on fonts that provide ligature glyphs because the caret (text cursor) positioning for each ligature must be provided in this table. [code: GDEF-missing]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GDEF table is missing, but it is mandatory to declare it on fonts that provide ligature glyphs because the caret (text cursor) positioning for each ligature must be provided in this table. [code: GDEF-missing]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDPGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GDEF table is missing, but it is mandatory to declare it on fonts that provide ligature glyphs because the caret (text cursor) positioning for each ligature must be provided in this table. [code: GDEF-missing]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GDEF table is missing, but it is mandatory to declare it on fonts that provide ligature glyphs because the caret (text cursor) positioning for each ligature must be provided in this table. [code: GDEF-missing]</p>
+</span></li></ul></div></details>
+<h3>Check font follows the Google Fonts CJK vertical metric schema</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/cjk_vertical_metrics&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/BIZUDGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.sTypoAscender is &quot;1802&quot; it should be 1802.24 [code: bad-OS/2.sTypoAscender]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.sTypoDescender is &quot;-246&quot; it should be -245.76 [code: bad-OS/2.sTypoDescender]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZUDPGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.sTypoAscender is &quot;1802&quot; it should be 1802.24 [code: bad-OS/2.sTypoAscender]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.sTypoDescender is &quot;-246&quot; it should be -245.76 [code: bad-OS/2.sTypoDescender]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZUDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.sTypoAscender is &quot;1802&quot; it should be 1802.24 [code: bad-OS/2.sTypoAscender]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.sTypoDescender is &quot;-246&quot; it should be -245.76 [code: bad-OS/2.sTypoDescender]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZUDPGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.sTypoAscender is &quot;1802&quot; it should be 1802.24 [code: bad-OS/2.sTypoAscender]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.sTypoDescender is &quot;-246&quot; it should be -245.76 [code: bad-OS/2.sTypoDescender]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.sTypoAscender is &quot;1802&quot; it should be 1802.24 [code: bad-OS/2.sTypoAscender]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>OS/2.sTypoDescender is &quot;-246&quot; it should be -245.76 [code: bad-OS/2.sTypoDescender]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Universal&gt; ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩⏩ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️ℹ️</h2>
+<h3>Check font contains no unreachable glyphs</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/unreachable_glyphs&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:
+- glyph01353
+- glyph13588
+- glyph12193
+- glyph13307
+- glyph13314
+- glyph13718
+- glyph01334
+- glyph01343
+- glyph01608
+- glyph01602
+- And 1285 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists.
+[code: unreachable-glyphs]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDPGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:
+- glyph13466
+- glyph00272
+- glyph13040
+- glyph13024
+- glyph00025
+- glyph00570
+- glyph12926
+- glyph00833
+- glyph13475
+- glyph13483
+- And 1113 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists.
+[code: unreachable-glyphs]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:
+- glyph01353
+- glyph13588
+- glyph12193
+- glyph13307
+- glyph13314
+- glyph13718
+- glyph01334
+- glyph01343
+- glyph01608
+- glyph01602
+- And 1285 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists.
+[code: unreachable-glyphs]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDPGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:
+- glyph13466
+- glyph00272
+- glyph13040
+- glyph13024
+- glyph00025
+- glyph00570
+- glyph12926
+- glyph00833
+- glyph13475
+- glyph13483
+- And 1113 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists.
+[code: unreachable-glyphs]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs could not be reached by codepoint or substitution rules:
+- glyph01353
+- glyph13588
+- glyph12193
+- glyph13307
+- glyph13314
+- glyph13718
+- glyph01334
+- glyph01343
+- glyph01608
+- glyph01602
+- And 1284 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists.
+[code: unreachable-glyphs]</p>
+</span></li></ul></div></details>
+<h3>Check if each glyph has the recommended amount of contours.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/contour_count&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]</p>
+</span></li><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.</p>
+<p>The following glyphs do not have the recommended number of contours:</p>
+<pre><code>- Glyph name: uni00AD	Contours detected: 1	Expected: 0
+- Glyph name: uni042D	Contours detected: 2	Expected: 1
+- Glyph name: uni044D	Contours detected: 2	Expected: 1
+- Glyph name: uni00AD	Contours detected: 1	Expected: 0
+- Glyph name: uni042D	Contours detected: 2	Expected: 1 
+- And Glyph name: uni044D	Contours detected: 2	Expected: 1
+</code></pre>
+<p>[code: contour-count]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDPGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]</p>
+</span></li><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.</p>
+<p>The following glyphs do not have the recommended number of contours:</p>
+<pre><code>- Glyph name: uni00AD	Contours detected: 1	Expected: 0
+- Glyph name: uni042D	Contours detected: 2	Expected: 1
+- Glyph name: uni044D	Contours detected: 2	Expected: 1
+- Glyph name: uni00AD	Contours detected: 1	Expected: 0
+- Glyph name: uni042D	Contours detected: 2	Expected: 1 
+- And Glyph name: uni044D	Contours detected: 2	Expected: 1
+</code></pre>
+<p>[code: contour-count]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]</p>
+</span></li><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.</p>
+<p>The following glyphs do not have the recommended number of contours:</p>
+<pre><code>- Glyph name: uni00AD	Contours detected: 1	Expected: 0
+- Glyph name: uni042D	Contours detected: 2	Expected: 1
+- Glyph name: uni044D	Contours detected: 2	Expected: 1
+- Glyph name: uni00AD	Contours detected: 1	Expected: 0
+- Glyph name: uni042D	Contours detected: 2	Expected: 1 
+- And Glyph name: uni044D	Contours detected: 2	Expected: 1
+</code></pre>
+<p>[code: contour-count]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDPGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]</p>
+</span></li><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.</p>
+<p>The following glyphs do not have the recommended number of contours:</p>
+<pre><code>- Glyph name: uni00AD	Contours detected: 1	Expected: 0
+- Glyph name: uni042D	Contours detected: 2	Expected: 1
+- Glyph name: uni044D	Contours detected: 2	Expected: 1
+- Glyph name: uni00AD	Contours detected: 1	Expected: 0
+- Glyph name: uni042D	Contours detected: 2	Expected: 1 
+- And Glyph name: uni044D	Contours detected: 2	Expected: 1
+</code></pre>
+<p>[code: contour-count]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]</p>
+</span></li><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.</p>
+<p>The following glyphs do not have the recommended number of contours:</p>
+<pre><code>- Glyph name: uni00AD	Contours detected: 1	Expected: 0
+- Glyph name: uni042D	Contours detected: 2	Expected: 1
+- Glyph name: uni044D	Contours detected: 2	Expected: 1
+- Glyph name: uni00AD	Contours detected: 1	Expected: 0
+- Glyph name: uni042D	Contours detected: 2	Expected: 1 
+- And Glyph name: uni044D	Contours detected: 2	Expected: 1
+</code></pre>
+<p>[code: contour-count]</p>
+</span></li></ul></div></details>
+<h3>Does the font contain chws and vchw features?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/cjk_chws_feature&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>chws feature not found in font. Use chws_tool (https://github.com/googlefonts/chws_tool) to add it. [code: missing-chws-feature]</p>
+</span></li><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>vchw feature not found in font. Use chws_tool (https://github.com/googlefonts/chws_tool) to add it. [code: missing-vchw-feature]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDPGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>chws feature not found in font. Use chws_tool (https://github.com/googlefonts/chws_tool) to add it. [code: missing-chws-feature]</p>
+</span></li><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>vchw feature not found in font. Use chws_tool (https://github.com/googlefonts/chws_tool) to add it. [code: missing-vchw-feature]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>chws feature not found in font. Use chws_tool (https://github.com/googlefonts/chws_tool) to add it. [code: missing-chws-feature]</p>
+</span></li><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>vchw feature not found in font. Use chws_tool (https://github.com/googlefonts/chws_tool) to add it. [code: missing-vchw-feature]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDPGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>chws feature not found in font. Use chws_tool (https://github.com/googlefonts/chws_tool) to add it. [code: missing-chws-feature]</p>
+</span></li><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>vchw feature not found in font. Use chws_tool (https://github.com/googlefonts/chws_tool) to add it. [code: missing-vchw-feature]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>chws feature not found in font. Use chws_tool (https://github.com/googlefonts/chws_tool) to add it. [code: missing-chws-feature]</p>
+</span></li><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>vchw feature not found in font. Use chws_tool (https://github.com/googlefonts/chws_tool) to add it. [code: missing-vchw-feature]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.head&gt; 🔥</h2>
+<h3>Checking font version fields (head and name table).</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/font_version&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>name version string for platform 1, encoding 0 (&quot;Version 001&quot;), could not be parsed. [code: parse]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>name version string for platform 1, encoding 1 (&quot;Version 001&quot;), could not be parsed. [code: parse]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>name version string for platform 3, encoding 1 (&quot;Version 001&quot;), could not be parsed. [code: parse]</p>
+</span></li><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>name version string for platform 3, encoding 1 (&quot;Version 001&quot;), could not be parsed. [code: parse]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.os2&gt; 🔥⚠️</h2>
+<h3>Fonts have consistent PANOSE proportion?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/family/panose_proportion&gt;</div>
+
+<details><summary>🔥 <strong>Family check</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>PANOSE proportion is not the same across this family. In order to fix this, please make sure that the panose.bProportion value is the same in the OS/2 table of all of this family font files. [code: inconsistency]</p>
+</span></li></ul></div></details>
+<h3>Check if OS/2 xAvgCharWidth is correct.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/xavgcharwidth&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>OS/2 xAvgCharWidth is 1991 but it should be 1966 which corresponds to the average of the widths of all glyphs in the font. [code: xAvgCharWidth-wrong]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.post&gt; 🔥🔥🔥🔥🔥</h2>
+<h3>Font has correct post table version?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/post_table_version&gt;</div>
+
+<details><summary>🔥 <strong>fonts/ttf/BIZUDGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Post table should be version 2 instead of 3.0. [code: post-table-version]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZUDPGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Post table should be version 2 instead of 3.0. [code: post-table-version]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZUDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Post table should be version 2 instead of 3.0. [code: post-table-version]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZUDPGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Post table should be version 2 instead of 3.0. [code: post-table-version]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Post table should be version 2 instead of 3.0. [code: post-table-version]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.name&gt; 🔥⚠️⚠️⏩⏩⏩⏩⏩</h2>
+<h3>Checking correctness of monospaced metadata.</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/monospace&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Font is monospaced but 1394 glyphs (10.08%) have a different width. You should check the widths of: ['space', 'exclam', 'quotedbl', 'numbersign', 'dollar', 'percent', 'ampersand', 'quotesingle', 'parenleft', 'parenright', 'asterisk', 'plus', 'comma', 'hyphen', 'period', 'slash', 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'colon', 'semicolon', 'less', 'equal', 'greater', 'question', 'at', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'bracketleft', 'backslash', 'bracketright', 'asciicircum', 'underscore', 'grave', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'braceleft', 'bar', 'braceright', 'asciitilde', 'notsubset', 'uni2285', 'uni228A', 'uni228B', 'notelement', 'emptyset', 'uni2305', 'uni2306', 'circleplus', 'uni2296', 'circlemultiply', 'uni2226', 'uni2262', 'uni2243', 'congruent', 'approxequal', 'uni2276', 'uni2277', 'arrowboth', 'uni266E', 'musicalnotedbl', 'uni266C', 'uni2669', 'uni25B7', 'uni25B6', 'uni25C1', 'uni25C0', 'uni2197', 'uni2198', 'uni2196', 'uni2199', 'uni21C4', 'uni21E8', 'uni21E6', 'uni21E7', 'uni21E9', 'uni2934', 'uni2935', 'uni25C9', 'openbullet', 'bullet', 'uni2213', 'aleph', 'uni210F', 'uni2113', 'uni2127', 'endash', 'uni29FA', 'uni29FB', 'uni2664', 'spade', 'uni2662', 'diamond', 'uni2661', 'heart', 'uni2667', 'club', 'sigma1', 'uni25B1', 'uni22DA', 'uni22DB', 'onethird', 'twothirds', 'uni2155', 'uni25D0', 'uni25D1', 'uni25D2', 'uni25D3', 'exclamdbl', 'uni2047', 'uni2048', 'uni2049', 'uni1E3E', 'uni1E3F', 'uni01F8', 'uni01F9', 'Euro', 'exclamdown', 'currency', 'brokenbar', 'copyright', 'ordfeminine', 'guillemotleft', 'registered', 'macron', 'uni0304', 'uni00B2', 'uni00B3', 'periodcentered', 'cedilla', 'uni00B9', 'ordmasculine', 'guillemotright', 'onequarter', 'onehalf', 'threequarters', 'questiondown', 'Agrave', 'Aacute', 'Acircumflex', 'Atilde', 'Adieresis', 'Aring', 'AE', 'Ccedilla', 'Egrave', 'Eacute', 'Ecircumflex', 'Edieresis', 'Igrave', 'Iacute', 'Icircumflex', 'Idieresis', 'Eth', 'Ntilde', 'Ograve', 'Oacute', 'Ocircumflex', 'Otilde', 'Odieresis', 'Oslash', 'Ugrave', 'Uacute', 'Ucircumflex', 'Udieresis', 'Yacute', 'Thorn', 'germandbls', 'agrave', 'aacute', 'acircumflex', 'atilde', 'adieresis', 'aring', 'ae', 'ccedilla', 'egrave', 'eacute', 'ecircumflex', 'edieresis', 'igrave', 'iacute', 'icircumflex', 'idieresis', 'eth', 'ntilde', 'ograve', 'oacute', 'ocircumflex', 'otilde', 'odieresis', 'oslash', 'ugrave', 'uacute', 'ucircumflex', 'udieresis', 'yacute', 'thorn', 'ydieresis', 'Amacron', 'Imacron', 'Umacron', 'Emacron', 'Omacron', 'amacron', 'imacron', 'umacron', 'emacron', 'omacron', 'Aogonek', 'breve', 'Lslash', 'Lcaron', 'Sacute', 'Scaron', 'Scedilla', 'Tcaron', 'Zacute', 'Zcaron', 'Zdotaccent', 'aogonek', 'ogonek', 'lslash', 'lcaron', 'sacute', 'caron', 'scaron', 'scedilla', 'tcaron', 'zacute', 'hungarumlaut', 'zcaron', 'zdotaccent', 'Racute', 'Abreve', 'Lacute', 'Cacute', 'Ccaron', 'Eogonek', 'Ecaron', 'Dcaron', 'Nacute', 'Ncaron', 'Ohungarumlaut', 'Rcaron', 'Uring', 'Uhungarumlaut', 'uni0162', 'racute', 'abreve', 'lacute', 'cacute', 'ccaron', 'eogonek', 'ecaron', 'dcaron', 'dcroat', 'nacute', 'ncaron', 'ohungarumlaut', 'rcaron', 'uring', 'uhungarumlaut', 'uni0163', 'dotaccent', 'Ccircumflex', 'Gcircumflex', 'Hcircumflex', 'Jcircumflex', 'Scircumflex', 'Ubreve', 'ccircumflex', 'gcircumflex', 'hcircumflex', 'jcircumflex', 'scircumflex', 'ubreve', 'uni0271', 'uni028B', 'uni027E', 'uni0283', 'uni0292', 'uni026C', 'uni026E', 'uni0279', 'uni0288', 'uni0256', 'uni0273', 'uni027D', 'uni0282', 'uni0290', 'uni027B', 'uni026D', 'uni025F', 'uni0272', 'uni029D', 'uni028E', 'uni0261', 'eng', 'uni0270', 'uni0281', 'hbar', 'uni0295', 'uni0294', 'uni0266', 'uni0298', 'uni01C2', 'uni0253', 'uni0257', 'uni0284', 'uni0260', 'uni0193', 'oe', 'OE', 'uni0268', 'uni0289', 'uni0258', 'uni0275', 'uni0259', 'uni025C', 'uni025E', 'uni0250', 'uni026F', 'uni028A', 'uni0264', 'uni028C', 'uni0254', 'uni0251', 'uni0252', 'uni028D', 'uni0265', 'uni02A2', 'uni02A1', 'uni0255', 'uni0291', 'uni027A', 'uni0267', 'uni025A', 'aeacute', 'uni1F70', 'uni1F71', 'uni1F72', 'uni1F73', 'uni0361', 'uni02C8', 'uni02CC', 'uni02D0', 'uni02D1', 'uni0306', 'uni203F', 'uni030B', 'acutecomb', 'uni030F', 'uni030C', 'uni0302', 'uni02E5', 'uni02E6', 'uni02E7', 'uni02E8', 'uni02E9', 'uni0325', 'uni032C', 'uni0339', 'uni031C', 'uni031F', 'uni0320', 'uni0308', 'uni033D', 'uni0329', 'uni032F', 'uni02DE', 'uni0324', 'uni0330', 'uni033C', 'uni0334', 'uni031D', 'uni031E', 'uni0318', 'uni0319', 'uni032A', 'uni033A', 'uni033B', 'tilde', 'uni031A', 'uni2042', 'uni00A0', 'glyph01248', 'glyph01249', 'glyph01250', 'glyph01251', 'uni00AD', 'glyph01253', 'minus', 'glyph01255', 'glyph01256', 'glyph01257', 'glyph01258', 'glyph01259', 'glyph01260', 'glyph01261', 'glyph01263', 'glyph01264', 'glyph01265', 'glyph01266', 'glyph01267', 'glyph01268', 'glyph01269', 'glyph01270', 'glyph01271', 'glyph01272', 'glyph01273', 'glyph01274', 'glyph01275', 'glyph01276', 'glyph01277', 'glyph01278', 'glyph01279', 'glyph01280', 'glyph01281', 'glyph01282', 'glyph01283', 'glyph01284', 'glyph01285', 'glyph01286', 'glyph01287', 'glyph01288', 'glyph01289', 'glyph01290', 'glyph01291', 'glyph01292', 'glyph01293', 'glyph01294', 'glyph01295', 'glyph01296', 'glyph01297', 'glyph01298', 'glyph01299', 'glyph01300', 'glyph01301', 'glyph01302', 'glyph01303', 'glyph01304', 'glyph01305', 'gravecomb', 'glyph01308', 'glyph01309', 'glyph01310', 'glyph01311', 'glyph01312', 'glyph01313', 'glyph01314', 'glyph01315', 'glyph01316', 'glyph01317', 'glyph01319', 'glyph01320', 'glyph01321', 'glyph01322', 'glyph01323', 'glyph01324', 'glyph01325', 'glyph01326', 'glyph01327', 'glyph01328', 'glyph01329', 'glyph01330', 'glyph01331', 'glyph01332', 'glyph01333', 'glyph01334', 'glyph01335', 'glyph01336', 'glyph01337', 'glyph01338', 'glyph01339', 'glyph01340', 'glyph01341', 'glyph01342', 'glyph01343', 'glyph01344', 'glyph01345', 'glyph01346', 'glyph01347', 'glyph01348', 'glyph01349', 'glyph01350', 'glyph01351', 'glyph01352', 'glyph01353', 'glyph01354', 'glyph01355', 'glyph01356', 'glyph01357', 'glyph01358', 'glyph01359', 'glyph01360', 'glyph01361', 'glyph01362', 'glyph01363', 'glyph01364', 'glyph01365', 'glyph01366', 'glyph01367', 'glyph01368', 'glyph01369', 'glyph01370', 'glyph01371', 'glyph01372', 'glyph01373', 'glyph01374', 'glyph01375', 'glyph01376', 'glyph01377', 'glyph01378', 'glyph01379', 'glyph01380', 'glyph01381', 'glyph01382', 'glyph01383', 'glyph01384', 'glyph01385', 'glyph01386', 'glyph01387', 'glyph01388', 'glyph01389', 'glyph01390', 'glyph01392', 'glyph01393', 'glyph01394', 'glyph01395', 'glyph01401', 'glyph01402', 'glyph01403', 'glyph01404', 'glyph01405', 'glyph01406', 'glyph01407', 'glyph01408', 'glyph01410', 'glyph01412', 'glyph01413', 'glyph01414', 'glyph01415', 'glyph01416', 'glyph01422', 'glyph01423', 'glyph01424', 'glyph01426', 'glyph01427', 'glyph01430', 'glyph01431', 'glyph01432', 'glyph01433', 'glyph01434', 'glyph01436', 'glyph01440', 'glyph01442', 'glyph01445', 'glyph01447', 'glyph01450', 'glyph01469', 'glyph01473', 'glyph01474', 'glyph01475', 'glyph01476', 'glyph01478', 'glyph01479', 'glyph01480', 'glyph01481', 'glyph01482', 'glyph01484', 'glyph01485', 'glyph01490', 'glyph01491', 'glyph01492', 'glyph01493', 'glyph01494', 'glyph01495', 'glyph01496', 'glyph01497', 'glyph01498', 'glyph01499', 'glyph01500', 'glyph01501', 'glyph01502', 'glyph01503', 'glyph01504', 'glyph01505', 'glyph01506', 'glyph01508', 'glyph01509', 'glyph01510', 'glyph01511', 'glyph01512', 'glyph01513', 'glyph01514', 'glyph01516', 'glyph01517', 'glyph01518', 'glyph01519', 'glyph01520', 'glyph01521', 'glyph01522', 'glyph01523', 'glyph01524', 'glyph01525', 'glyph01526', 'glyph01527', 'glyph01528', 'glyph01529', 'glyph01530', 'glyph01531', 'glyph01532', 'glyph01533', 'glyph01534', 'glyph01535', 'glyph01536', 'glyph01537', 'glyph01538', 'glyph01539', 'glyph01540', 'glyph01541', 'glyph01542', 'glyph01543', 'glyph01544', 'glyph01545', 'glyph01546', 'glyph01547', 'glyph01548', 'glyph01549', 'glyph01550', 'glyph01551', 'glyph01552', 'glyph01553', 'glyph01554', 'glyph01555', 'glyph01556', 'glyph01557', 'glyph01558', 'glyph01559', 'glyph01560', 'glyph01561', 'glyph01562', 'glyph01563', 'glyph01564', 'glyph01565', 'glyph01566', 'glyph01567', 'glyph01569', 'glyph01570', 'glyph01571', 'glyph01572', 'glyph01573', 'glyph01574', 'glyph01575', 'glyph01576', 'glyph01577', 'glyph01578', 'glyph01579', 'glyph01580', 'glyph01581', 'glyph01582', 'glyph01583', 'glyph01584', 'glyph01585', 'glyph01586', 'glyph01587', 'glyph01588', 'glyph01589', 'glyph01590', 'glyph01591', 'glyph01592', 'glyph01593', 'glyph01594', 'glyph01595', 'glyph01596', 'glyph01597', 'glyph01598', 'glyph01599', 'glyph01600', 'glyph01601', 'glyph01602', 'glyph01603', 'glyph01604', 'glyph01609', 'glyph01611', 'glyph01612', 'glyph01613', 'glyph01615', 'glyph01616', 'glyph01617', 'glyph01618', 'glyph01619', 'glyph01621', 'glyph01622', 'glyph01623', 'glyph01624', 'glyph01625', 'glyph01626', 'glyph01627', 'glyph01628', 'glyph01629', 'glyph01630', 'glyph01631', 'glyph01632', 'glyph01633', 'glyph01635', 'glyph01636', 'glyph01638', 'glyph01639', 'glyph01640', 'glyph01641', 'glyph01642', 'glyph01643', 'glyph01644', 'glyph01645', 'glyph01646', 'glyph01650', 'glyph01651', 'glyph01652', 'glyph01653', 'glyph01654', 'glyph01655', 'glyph01656', 'glyph01657', 'glyph01658', 'glyph01659', 'glyph01660', 'glyph01661', 'glyph01662', 'glyph01663', 'glyph01664', 'glyph01665', 'glyph01666', 'glyph01667', 'glyph01668', 'glyph01669', 'glyph01670', 'glyph01671', 'glyph01672', 'glyph01673', 'glyph01674', 'glyph01675', 'glyph01676', 'glyph01677', 'glyph01678', 'glyph01679', 'glyph01680', 'glyph01681', 'glyph01683', 'glyph01684', 'glyph01685', 'glyph01686', 'glyph01687', 'glyph01688', 'glyph01689', 'glyph01690', 'glyph01691', 'glyph01692', 'glyph01693', 'glyph01694', 'glyph01695', 'glyph01696', 'glyph01697', 'glyph01698', 'glyph01699', 'glyph01700', 'glyph01701', 'glyph01702', 'glyph01703', 'glyph01704', 'glyph01705', 'glyph01706', 'glyph01707', 'glyph01708', 'glyph01709', 'glyph01710', 'glyph01711', 'glyph01712', 'glyph01713', 'glyph01714', 'glyph01715', 'glyph01716', 'glyph01717', 'glyph01718', 'glyph01719', 'glyph01720', 'glyph01721', 'glyph01722', 'glyph01723', 'glyph01724', 'glyph01725', 'glyph01726', 'glyph01727', 'glyph01728', 'glyph01729', 'glyph01730', 'glyph01731', 'glyph01732', 'glyph01733', 'glyph01734', 'glyph01735', 'glyph01736', 'glyph01737', 'glyph01738', 'glyph01739', 'glyph01740', 'glyph01741', 'glyph01742', 'glyph01743', 'glyph01744', 'glyph01745', 'glyph01746', 'glyph01747', 'glyph01748', 'glyph01749', 'glyph01750', 'glyph01751', 'glyph01752', 'glyph01753', 'glyph01754', 'glyph01755', 'glyph01756', 'glyph01757', 'glyph01758', 'glyph01759', 'glyph01760', 'glyph01761', 'glyph01762', 'glyph01763', 'glyph01764', 'glyph01765', 'glyph01766', 'glyph01767', 'glyph01768', 'glyph01769', 'glyph01770', 'glyph01771', 'glyph01772', 'glyph01773', 'glyph01774', 'glyph01775', 'glyph01776', 'glyph01777', 'glyph01778', 'glyph01779', 'glyph01780', 'glyph01781', 'glyph01782', 'glyph01783', 'glyph01784', 'glyph01785', 'glyph01786', 'glyph01787', 'glyph01788', 'glyph01789', 'glyph01790', 'glyph01791', 'glyph01792', 'glyph01793', 'glyph01794', 'glyph01795', 'glyph01796', 'glyph01797', 'glyph01798', 'glyph01799', 'glyph01800', 'glyph01801', 'glyph01802', 'glyph01803', 'glyph01804', 'glyph01805', 'glyph01806', 'glyph01807', 'glyph01808', 'glyph01809', 'glyph01810', 'glyph01811', 'glyph01812', 'glyph01813', 'glyph01814', 'glyph01815', 'glyph01816', 'glyph01817', 'glyph01818', 'glyph01819', 'glyph01820', 'glyph01821', 'glyph01822', 'glyph01823', 'glyph01824', 'glyph01825', 'glyph01826', 'glyph01827', 'glyph01830', 'glyph01831', 'glyph01832', 'glyph01833', 'glyph01834', 'glyph01835', 'glyph01836', 'glyph01837', 'glyph01838', 'glyph01839', 'glyph01840', 'glyph01841', 'glyph01842', 'glyph01843', 'glyph01844', 'glyph01845', 'glyph01846', 'glyph01847', 'glyph01848', 'glyph01849', 'glyph01850', 'glyph01851', 'glyph01852', 'glyph01853', 'glyph01855', 'glyph01856', 'glyph01857', 'glyph01858', 'glyph01859', 'glyph01860', 'glyph01861', 'glyph01862', 'glyph01863', 'glyph01864', 'glyph01865', 'glyph01866', 'glyph01867', 'glyph01868', 'glyph01869', 'glyph01870', 'glyph01871', 'glyph01872', 'glyph01873', 'glyph01874', 'glyph01875', 'glyph01876', 'glyph01877', 'glyph01878', 'glyph01879', 'glyph01880', 'glyph01881', 'glyph01882', 'glyph01883', 'glyph01884', 'glyph01885', 'glyph01886', 'glyph01887', 'glyph01888', 'glyph01889', 'glyph01890', 'glyph01891', 'glyph01892', 'glyph01893', 'glyph01894', 'glyph01895', 'glyph01896', 'glyph01897', 'glyph01898', 'glyph01899', 'glyph12253', 'uni203E', 'glyph12255', 'glyph12256', 'glyph12259', 'cent', 'sterling', 'yen', 'logicalnot', 'emdash', 'glyph12285', 'glyph12287', 'glyph12288', 'glyph12290', 'glyph12291', 'glyph12292', 'glyph12293', 'glyph12294', 'glyph12295', 'glyph12296', 'glyph12298', 'glyph12299', 'glyph12300', 'glyph12301', 'glyph12302', 'glyph12303', 'glyph12304', 'glyph12305', 'glyph12306', 'glyph12307', 'glyph12308', 'glyph12309', 'glyph12310', 'glyph12311', 'glyph12312', 'glyph12313', 'glyph12314', 'glyph12315', 'glyph12316', 'uniFF61', 'uniFF62', 'uniFF63', 'uniFF64', 'uniFF65', 'uniFF66', 'uniFF67', 'uniFF68', 'uniFF69', 'uniFF6A', 'uniFF6B', 'uniFF6C', 'uniFF6D', 'uniFF6E', 'uniFF6F', 'uniFF70', 'uniFF71', 'uniFF72', 'uniFF73', 'uniFF74', 'uniFF75', 'uniFF76', 'uniFF77', 'uniFF78', 'uniFF79', 'uniFF7A', 'uniFF7B', 'uniFF7C', 'uniFF7D', 'uniFF7E', 'uniFF7F', 'uniFF80', 'uniFF81', 'uniFF82', 'uniFF83', 'uniFF84', 'uniFF85', 'uniFF86', 'uniFF87', 'uniFF88', 'uniFF89', 'uniFF8A', 'uniFF8B', 'uniFF8C', 'uniFF8D', 'uniFF8E', 'uniFF8F', 'uniFF90', 'uniFF91', 'uniFF92', 'uniFF93', 'uniFF94', 'uniFF95', 'uniFF96', 'uniFF97', 'uniFF98', 'uniFF99', 'uniFF9A', 'uniFF9B', 'uniFF9C', 'uniFF9D', 'uniFF9E', 'uniFF9F', 'glyph12855', 'glyph12856', 'glyph12857', 'glyph12858', 'glyph12859', 'glyph12860', 'glyph12861', 'glyph12862', 'glyph12863', 'glyph12864', 'glyph12865', 'glyph12866', 'glyph12867', 'glyph12868', 'glyph12869', 'glyph12870', 'glyph12871', 'glyph12872', 'glyph12874', 'glyph12875', 'glyph12876', 'glyph12877', 'glyph12878', 'glyph12879', 'glyph12880', 'glyph12881', 'glyph12882', 'glyph12883', 'glyph12884', 'glyph12885', 'glyph12886', 'glyph12887', 'glyph12888', 'glyph12889', 'glyph12890', 'glyph12891', 'glyph12892', 'glyph12893', 'glyph12894', 'glyph12895', 'glyph12896', 'glyph12897', 'glyph12898', 'glyph12899', 'glyph12900', 'glyph12901', 'glyph12902', 'glyph12903', 'glyph12904', 'glyph12905', 'glyph12906', 'glyph12907', 'glyph12908', 'glyph12909', 'glyph12910', 'glyph12911', 'glyph12912', 'glyph12913', 'glyph12914', 'glyph12915', 'glyph12916', 'glyph12917', 'glyph12918', 'glyph12919', 'glyph12920', 'glyph12921', 'glyph12922', 'glyph12923', 'glyph12924', 'glyph12925', 'glyph12926', 'glyph12927', 'glyph12928', 'glyph12929', 'glyph12930', 'glyph12931', 'glyph12932', 'glyph12933', 'glyph12934', 'glyph12935', 'glyph12936', 'glyph12937', 'glyph12938', 'glyph12939', 'glyph12940', 'glyph12941', 'glyph12942', 'glyph12943', 'glyph12944', 'glyph12945', 'glyph12946', 'glyph12947', 'glyph12948', 'glyph12949', 'glyph12950', 'glyph12951', 'glyph12952', 'glyph12953', 'glyph12954', 'glyph12955', 'glyph12956', 'glyph12957', 'glyph12958', 'glyph12959', 'glyph12960', 'glyph12961', 'glyph12962', 'glyph12963', 'glyph12964', 'glyph12965', 'glyph12966', 'glyph12967', 'glyph12968', 'glyph12969', 'glyph12970', 'glyph12971', 'glyph12972', 'glyph12973', 'glyph12974', 'glyph12975', 'glyph12976', 'glyph12977', 'glyph12978', 'glyph12979', 'glyph12980', 'glyph12981', 'glyph12982', 'glyph12983', 'glyph12984', 'glyph12985', 'glyph12986', 'glyph12987', 'glyph12988', 'glyph12989', 'glyph12990', 'glyph12991', 'glyph12992', 'glyph12993', 'glyph12994', 'glyph12995', 'glyph12996', 'glyph12997', 'glyph12998', 'glyph12999', 'glyph13000', 'glyph13001', 'glyph13002', 'glyph13003', 'glyph13004', 'glyph13005', 'glyph13006', 'glyph13007', 'glyph13008', 'glyph13009', 'glyph13010', 'glyph13011', 'glyph13012', 'glyph13013', 'glyph13014', 'glyph13015', 'glyph13016', 'glyph13017', 'glyph13018', 'glyph13019', 'glyph13020', 'glyph13021', 'glyph13022', 'glyph13023', 'glyph13024', 'glyph13025', 'glyph13026', 'glyph13027', 'glyph13028', 'glyph13029', 'glyph13030', 'glyph13031', 'glyph13032', 'glyph13033', 'glyph13034', 'glyph13035', 'glyph13036', 'glyph13037', 'glyph13038', 'glyph13039', 'glyph13040', 'glyph13041', 'glyph13042', 'glyph13043', 'glyph13044', 'glyph13045', 'glyph13046', 'glyph13047', 'glyph13048', 'glyph13576', 'glyph13671', 'glyph13672', 'glyph13673', 'glyph13674', 'glyph13675', 'glyph13676', 'glyph13677', 'glyph13678', 'glyph13679', 'glyph13680', 'glyph13681', 'glyph13682', 'glyph13683', 'glyph13684', 'glyph13685', 'glyph13686', 'glyph13687', 'glyph13688', 'glyph13689', 'glyph13690', 'glyph13691', 'glyph13692', 'glyph13693', 'glyph13694', 'glyph13695', 'glyph13696', 'glyph13697', 'glyph13698', 'glyph13699', 'glyph13700', 'glyph13701', 'glyph13703', 'glyph13704', 'glyph13705', 'glyph13706', 'glyph13707', 'glyph13708', 'glyph13709', 'glyph13710', 'glyph13711', 'glyph13713', 'glyph13714', 'glyph13715', 'glyph13716', 'glyph13717', 'glyph13718', 'glyph13719', 'glyph13720', 'glyph13721', 'glyph13722', 'glyph13723', 'glyph13724', 'glyph13725', 'glyph13726', 'glyph13727', 'glyph13728', 'glyph13729', 'glyph13730', 'glyph13731', 'glyph13732', 'glyph13733', 'glyph13734', 'glyph13735', 'glyph13736', 'glyph13737', 'glyph13738', 'glyph13739', 'glyph13740', 'glyph13741', 'glyph13813', 'circumflex', 'uni2074', 'fraction', 'guilsinglleft', 'guilsinglright', 'dotlessi', 'mu', 'quotedblbase', 'quotesinglbase', 'ring'] [code: mono-outliers]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Font is monospaced but 1434 glyphs (10.37%) have a different width. You should check the widths of: ['space', 'exclam', 'quotedbl', 'numbersign', 'dollar', 'percent', 'ampersand', 'quotesingle', 'parenleft', 'parenright', 'asterisk', 'plus', 'comma', 'hyphen', 'period', 'slash', 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'colon', 'semicolon', 'less', 'equal', 'greater', 'question', 'at', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'bracketleft', 'backslash', 'bracketright', 'asciicircum', 'underscore', 'grave', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'braceleft', 'bar', 'braceright', 'asciitilde', 'notsubset', 'uni2285', 'uni228A', 'uni228B', 'notelement', 'emptyset', 'uni2305', 'uni2306', 'circleplus', 'uni2296', 'circlemultiply', 'uni2226', 'uni2262', 'uni2243', 'congruent', 'approxequal', 'uni2276', 'uni2277', 'arrowboth', 'uni266E', 'musicalnotedbl', 'uni266C', 'uni2669', 'uni25B7', 'uni25B6', 'uni25C1', 'uni25C0', 'uni2197', 'uni2198', 'uni2196', 'uni2199', 'uni21C4', 'uni21E8', 'uni21E6', 'uni21E7', 'uni21E9', 'uni2934', 'uni2935', 'uni25C9', 'openbullet', 'bullet', 'uni2213', 'aleph', 'uni210F', 'uni2113', 'uni2127', 'endash', 'uni29FA', 'uni29FB', 'uni2664', 'spade', 'uni2662', 'diamond', 'uni2661', 'heart', 'uni2667', 'club', 'sigma1', 'uni25B1', 'uni22DA', 'uni22DB', 'onethird', 'twothirds', 'uni2155', 'uni25D0', 'uni25D1', 'uni25D2', 'uni25D3', 'exclamdbl', 'uni2047', 'uni2048', 'uni2049', 'uni1E3E', 'uni1E3F', 'uni01F8', 'uni01F9', 'Euro', 'exclamdown', 'currency', 'brokenbar', 'copyright', 'ordfeminine', 'guillemotleft', 'registered', 'macron', 'uni0304', 'uni00B2', 'uni00B3', 'periodcentered', 'cedilla', 'uni00B9', 'ordmasculine', 'guillemotright', 'onequarter', 'onehalf', 'threequarters', 'questiondown', 'Agrave', 'Aacute', 'Acircumflex', 'Atilde', 'Adieresis', 'Aring', 'AE', 'Ccedilla', 'Egrave', 'Eacute', 'Ecircumflex', 'Edieresis', 'Igrave', 'Iacute', 'Icircumflex', 'Idieresis', 'Eth', 'Ntilde', 'Ograve', 'Oacute', 'Ocircumflex', 'Otilde', 'Odieresis', 'Oslash', 'Ugrave', 'Uacute', 'Ucircumflex', 'Udieresis', 'Yacute', 'Thorn', 'germandbls', 'agrave', 'aacute', 'acircumflex', 'atilde', 'adieresis', 'aring', 'ae', 'ccedilla', 'egrave', 'eacute', 'ecircumflex', 'edieresis', 'igrave', 'iacute', 'icircumflex', 'idieresis', 'eth', 'ntilde', 'ograve', 'oacute', 'ocircumflex', 'otilde', 'odieresis', 'oslash', 'ugrave', 'uacute', 'ucircumflex', 'udieresis', 'yacute', 'thorn', 'ydieresis', 'Amacron', 'Imacron', 'Umacron', 'Emacron', 'Omacron', 'amacron', 'imacron', 'umacron', 'emacron', 'omacron', 'Aogonek', 'breve', 'Lslash', 'Lcaron', 'Sacute', 'Scaron', 'Scedilla', 'Tcaron', 'Zacute', 'Zcaron', 'Zdotaccent', 'aogonek', 'ogonek', 'lslash', 'lcaron', 'sacute', 'caron', 'scaron', 'scedilla', 'tcaron', 'zacute', 'hungarumlaut', 'zcaron', 'zdotaccent', 'Racute', 'Abreve', 'Lacute', 'Cacute', 'Ccaron', 'Eogonek', 'Ecaron', 'Dcaron', 'Nacute', 'Ncaron', 'Ohungarumlaut', 'Rcaron', 'Uring', 'Uhungarumlaut', 'uni0162', 'racute', 'abreve', 'lacute', 'cacute', 'ccaron', 'eogonek', 'ecaron', 'dcaron', 'dcroat', 'nacute', 'ncaron', 'ohungarumlaut', 'rcaron', 'uring', 'uhungarumlaut', 'uni0163', 'dotaccent', 'Ccircumflex', 'Gcircumflex', 'Hcircumflex', 'Jcircumflex', 'Scircumflex', 'Ubreve', 'ccircumflex', 'gcircumflex', 'hcircumflex', 'jcircumflex', 'scircumflex', 'ubreve', 'uni0271', 'uni028B', 'uni027E', 'uni0283', 'uni0292', 'uni026C', 'uni026E', 'uni0279', 'uni0288', 'uni0256', 'uni0273', 'uni027D', 'uni0282', 'uni0290', 'uni027B', 'uni026D', 'uni025F', 'uni0272', 'uni029D', 'uni028E', 'uni0261', 'eng', 'uni0270', 'uni0281', 'hbar', 'uni0295', 'uni0294', 'uni0266', 'uni0298', 'uni01C2', 'uni0253', 'uni0257', 'uni0284', 'uni0260', 'uni0193', 'oe', 'OE', 'uni0268', 'uni0289', 'uni0258', 'uni0275', 'uni0259', 'uni025C', 'uni025E', 'uni0250', 'uni026F', 'uni028A', 'uni0264', 'uni028C', 'uni0254', 'uni0251', 'uni0252', 'uni028D', 'uni0265', 'uni02A2', 'uni02A1', 'uni0255', 'uni0291', 'uni027A', 'uni0267', 'uni025A', 'aeacute', 'uni1F70', 'uni1F71', 'uni1F72', 'uni1F73', 'uni0361', 'uni02C8', 'uni02CC', 'uni02D0', 'uni02D1', 'uni0306', 'uni203F', 'uni030B', 'acutecomb', 'uni030F', 'uni030C', 'uni0302', 'uni02E5', 'uni02E6', 'uni02E7', 'uni02E8', 'uni02E9', 'uni0325', 'uni032C', 'uni0339', 'uni031C', 'uni031F', 'uni0320', 'uni0308', 'uni033D', 'uni0329', 'uni032F', 'uni02DE', 'uni0324', 'uni0330', 'uni033C', 'uni0334', 'uni031D', 'uni031E', 'uni0318', 'uni0319', 'uni032A', 'uni033A', 'uni033B', 'tilde', 'uni031A', 'uni2042', 'uni00A0', 'glyph01248', 'glyph01249', 'glyph01250', 'glyph01251', 'uni00AD', 'glyph01253', 'minus', 'glyph01255', 'glyph01256', 'glyph01257', 'glyph01258', 'glyph01259', 'glyph01260', 'glyph01261', 'glyph01263', 'glyph01264', 'glyph01265', 'glyph01266', 'glyph01267', 'glyph01268', 'glyph01269', 'glyph01270', 'glyph01271', 'glyph01272', 'glyph01273', 'glyph01274', 'glyph01275', 'glyph01276', 'glyph01277', 'glyph01278', 'glyph01279', 'glyph01280', 'glyph01281', 'glyph01282', 'glyph01283', 'glyph01284', 'glyph01285', 'glyph01286', 'glyph01287', 'glyph01288', 'glyph01289', 'glyph01290', 'glyph01291', 'glyph01292', 'glyph01293', 'glyph01294', 'glyph01295', 'glyph01296', 'glyph01297', 'glyph01298', 'glyph01299', 'glyph01300', 'glyph01301', 'glyph01302', 'glyph01303', 'glyph01304', 'glyph01305', 'glyph01306', 'gravecomb', 'glyph01308', 'glyph01309', 'glyph01310', 'glyph01311', 'glyph01312', 'glyph01313', 'glyph01314', 'glyph01315', 'glyph01316', 'glyph01317', 'glyph01318', 'glyph01319', 'glyph01320', 'glyph01321', 'glyph01322', 'glyph01323', 'glyph01324', 'glyph01325', 'glyph01326', 'glyph01327', 'glyph01328', 'glyph01329', 'glyph01330', 'glyph01331', 'glyph01332', 'glyph01333', 'glyph01334', 'glyph01335', 'glyph01336', 'glyph01337', 'glyph01338', 'glyph01339', 'glyph01340', 'glyph01341', 'glyph01342', 'glyph01343', 'glyph01344', 'glyph01345', 'glyph01346', 'glyph01347', 'glyph01348', 'glyph01349', 'glyph01350', 'glyph01351', 'glyph01352', 'glyph01353', 'glyph01354', 'glyph01355', 'glyph01356', 'glyph01357', 'glyph01358', 'glyph01359', 'glyph01360', 'glyph01361', 'glyph01362', 'glyph01363', 'glyph01364', 'glyph01365', 'glyph01366', 'glyph01367', 'glyph01368', 'glyph01369', 'glyph01370', 'glyph01371', 'glyph01372', 'glyph01373', 'glyph01374', 'glyph01375', 'glyph01376', 'glyph01377', 'glyph01378', 'glyph01379', 'glyph01380', 'glyph01381', 'glyph01382', 'glyph01383', 'glyph01384', 'glyph01385', 'glyph01386', 'glyph01387', 'glyph01388', 'glyph01389', 'glyph01390', 'glyph01392', 'glyph01393', 'glyph01394', 'glyph01395', 'glyph01401', 'glyph01402', 'glyph01403', 'glyph01404', 'glyph01405', 'glyph01406', 'glyph01407', 'glyph01408', 'glyph01409', 'glyph01410', 'glyph01412', 'glyph01413', 'glyph01414', 'glyph01415', 'glyph01416', 'glyph01417', 'glyph01418', 'glyph01420', 'glyph01422', 'glyph01423', 'glyph01424', 'glyph01425', 'glyph01426', 'glyph01427', 'glyph01428', 'glyph01430', 'glyph01431', 'glyph01432', 'glyph01433', 'glyph01434', 'glyph01436', 'glyph01438', 'glyph01440', 'glyph01441', 'glyph01442', 'glyph01443', 'glyph01445', 'glyph01446', 'glyph01447', 'glyph01448', 'glyph01449', 'glyph01450', 'glyph01451', 'glyph01452', 'glyph01454', 'glyph01455', 'glyph01456', 'glyph01457', 'glyph01460', 'glyph01463', 'glyph01466', 'glyph01467', 'glyph01468', 'glyph01469', 'glyph01470', 'glyph01471', 'glyph01472', 'glyph01473', 'glyph01474', 'glyph01475', 'glyph01476', 'glyph01477', 'glyph01478', 'glyph01479', 'glyph01480', 'glyph01481', 'glyph01482', 'glyph01483', 'glyph01484', 'glyph01485', 'glyph01486', 'glyph01487', 'glyph01488', 'glyph01489', 'glyph01490', 'glyph01491', 'glyph01492', 'glyph01493', 'glyph01494', 'glyph01495', 'glyph01496', 'glyph01497', 'glyph01498', 'glyph01499', 'glyph01500', 'glyph01501', 'glyph01502', 'glyph01503', 'glyph01504', 'glyph01505', 'glyph01506', 'glyph01508', 'glyph01509', 'glyph01510', 'glyph01511', 'glyph01512', 'glyph01513', 'glyph01514', 'glyph01516', 'glyph01517', 'glyph01518', 'glyph01519', 'glyph01520', 'glyph01521', 'glyph01522', 'glyph01523', 'glyph01524', 'glyph01525', 'glyph01526', 'glyph01527', 'glyph01528', 'glyph01529', 'glyph01530', 'glyph01531', 'glyph01532', 'glyph01533', 'glyph01534', 'glyph01535', 'glyph01536', 'glyph01537', 'glyph01538', 'glyph01539', 'glyph01540', 'glyph01541', 'glyph01542', 'glyph01543', 'glyph01544', 'glyph01545', 'glyph01546', 'glyph01547', 'glyph01548', 'glyph01549', 'glyph01550', 'glyph01551', 'glyph01552', 'glyph01553', 'glyph01554', 'glyph01555', 'glyph01556', 'glyph01557', 'glyph01558', 'glyph01559', 'glyph01560', 'glyph01561', 'glyph01562', 'glyph01563', 'glyph01564', 'glyph01565', 'glyph01566', 'glyph01567', 'glyph01568', 'glyph01569', 'glyph01570', 'glyph01571', 'glyph01572', 'glyph01573', 'glyph01574', 'glyph01575', 'glyph01576', 'glyph01577', 'glyph01578', 'glyph01579', 'glyph01580', 'glyph01581', 'glyph01582', 'glyph01583', 'glyph01584', 'glyph01585', 'glyph01586', 'glyph01587', 'glyph01588', 'glyph01589', 'glyph01590', 'glyph01591', 'glyph01592', 'glyph01593', 'glyph01594', 'glyph01595', 'glyph01596', 'glyph01597', 'glyph01598', 'glyph01599', 'glyph01600', 'glyph01601', 'glyph01602', 'glyph01603', 'glyph01604', 'glyph01609', 'glyph01610', 'glyph01611', 'glyph01612', 'glyph01613', 'glyph01615', 'glyph01616', 'glyph01617', 'glyph01618', 'glyph01619', 'glyph01620', 'glyph01621', 'glyph01622', 'glyph01623', 'glyph01624', 'glyph01625', 'glyph01626', 'glyph01627', 'glyph01628', 'glyph01629', 'glyph01630', 'glyph01631', 'glyph01632', 'glyph01633', 'glyph01635', 'glyph01636', 'glyph01638', 'glyph01639', 'glyph01640', 'glyph01641', 'glyph01642', 'glyph01643', 'glyph01644', 'glyph01645', 'glyph01646', 'glyph01650', 'glyph01651', 'glyph01652', 'glyph01653', 'glyph01654', 'glyph01655', 'glyph01656', 'glyph01657', 'glyph01658', 'glyph01659', 'glyph01660', 'glyph01661', 'glyph01662', 'glyph01663', 'glyph01664', 'glyph01665', 'glyph01666', 'glyph01667', 'glyph01668', 'glyph01669', 'glyph01670', 'glyph01671', 'glyph01672', 'glyph01673', 'glyph01674', 'glyph01675', 'glyph01676', 'glyph01677', 'glyph01678', 'glyph01679', 'glyph01680', 'glyph01681', 'glyph01683', 'glyph01684', 'glyph01685', 'glyph01686', 'glyph01687', 'glyph01688', 'glyph01689', 'glyph01690', 'glyph01691', 'glyph01692', 'glyph01693', 'glyph01694', 'glyph01695', 'glyph01696', 'glyph01697', 'glyph01698', 'glyph01699', 'glyph01700', 'glyph01701', 'glyph01702', 'glyph01703', 'glyph01704', 'glyph01705', 'glyph01706', 'glyph01707', 'glyph01708', 'glyph01709', 'glyph01710', 'glyph01711', 'glyph01712', 'glyph01713', 'glyph01714', 'glyph01715', 'glyph01716', 'glyph01717', 'glyph01718', 'glyph01719', 'glyph01720', 'glyph01721', 'glyph01722', 'glyph01723', 'glyph01724', 'glyph01725', 'glyph01726', 'glyph01727', 'glyph01728', 'glyph01729', 'glyph01730', 'glyph01731', 'glyph01732', 'glyph01733', 'glyph01734', 'glyph01735', 'glyph01736', 'glyph01737', 'glyph01738', 'glyph01739', 'glyph01740', 'glyph01741', 'glyph01742', 'glyph01743', 'glyph01744', 'glyph01745', 'glyph01746', 'glyph01747', 'glyph01748', 'glyph01749', 'glyph01750', 'glyph01751', 'glyph01752', 'glyph01753', 'glyph01754', 'glyph01755', 'glyph01756', 'glyph01757', 'glyph01758', 'glyph01759', 'glyph01760', 'glyph01761', 'glyph01762', 'glyph01763', 'glyph01764', 'glyph01765', 'glyph01766', 'glyph01767', 'glyph01768', 'glyph01769', 'glyph01770', 'glyph01771', 'glyph01772', 'glyph01773', 'glyph01774', 'glyph01775', 'glyph01776', 'glyph01777', 'glyph01778', 'glyph01779', 'glyph01780', 'glyph01781', 'glyph01782', 'glyph01783', 'glyph01784', 'glyph01785', 'glyph01786', 'glyph01787', 'glyph01788', 'glyph01789', 'glyph01790', 'glyph01791', 'glyph01792', 'glyph01793', 'glyph01794', 'glyph01795', 'glyph01796', 'glyph01797', 'glyph01798', 'glyph01799', 'glyph01800', 'glyph01801', 'glyph01802', 'glyph01803', 'glyph01804', 'glyph01805', 'glyph01806', 'glyph01807', 'glyph01808', 'glyph01809', 'glyph01810', 'glyph01811', 'glyph01812', 'glyph01813', 'glyph01814', 'glyph01815', 'glyph01816', 'glyph01817', 'glyph01818', 'glyph01819', 'glyph01820', 'glyph01821', 'glyph01822', 'glyph01823', 'glyph01824', 'glyph01825', 'glyph01826', 'glyph01827', 'glyph01830', 'glyph01831', 'glyph01832', 'glyph01833', 'glyph01834', 'glyph01835', 'glyph01836', 'glyph01837', 'glyph01838', 'glyph01839', 'glyph01840', 'glyph01841', 'glyph01842', 'glyph01843', 'glyph01844', 'glyph01845', 'glyph01846', 'glyph01847', 'glyph01848', 'glyph01849', 'glyph01850', 'glyph01851', 'glyph01852', 'glyph01853', 'glyph01855', 'glyph01856', 'glyph01857', 'glyph01858', 'glyph01859', 'glyph01860', 'glyph01861', 'glyph01862', 'glyph01863', 'glyph01864', 'glyph01865', 'glyph01866', 'glyph01867', 'glyph01868', 'glyph01869', 'glyph01870', 'glyph01871', 'glyph01872', 'glyph01873', 'glyph01874', 'glyph01875', 'glyph01876', 'glyph01877', 'glyph01878', 'glyph01879', 'glyph01880', 'glyph01881', 'glyph01882', 'glyph01883', 'glyph01884', 'glyph01885', 'glyph01886', 'glyph01887', 'glyph01888', 'glyph01889', 'glyph01890', 'glyph01891', 'glyph01892', 'glyph01893', 'glyph01894', 'glyph01895', 'glyph01896', 'glyph01897', 'glyph01898', 'glyph01899', 'glyph12253', 'uni203E', 'glyph12255', 'glyph12256', 'glyph12259', 'cent', 'sterling', 'yen', 'logicalnot', 'emdash', 'glyph12285', 'glyph12286', 'glyph12287', 'glyph12288', 'glyph12290', 'glyph12291', 'glyph12292', 'glyph12293', 'glyph12294', 'glyph12295', 'glyph12296', 'glyph12298', 'glyph12299', 'glyph12300', 'glyph12301', 'glyph12302', 'glyph12303', 'glyph12304', 'glyph12305', 'glyph12306', 'glyph12307', 'glyph12308', 'glyph12309', 'glyph12310', 'glyph12311', 'glyph12312', 'glyph12313', 'glyph12314', 'glyph12315', 'glyph12316', 'uniFF61', 'uniFF62', 'uniFF63', 'uniFF64', 'uniFF65', 'uniFF66', 'uniFF67', 'uniFF68', 'uniFF69', 'uniFF6A', 'uniFF6B', 'uniFF6C', 'uniFF6D', 'uniFF6E', 'uniFF6F', 'uniFF70', 'uniFF71', 'uniFF72', 'uniFF73', 'uniFF74', 'uniFF75', 'uniFF76', 'uniFF77', 'uniFF78', 'uniFF79', 'uniFF7A', 'uniFF7B', 'uniFF7C', 'uniFF7D', 'uniFF7E', 'uniFF7F', 'uniFF80', 'uniFF81', 'uniFF82', 'uniFF83', 'uniFF84', 'uniFF85', 'uniFF86', 'uniFF87', 'uniFF88', 'uniFF89', 'uniFF8A', 'uniFF8B', 'uniFF8C', 'uniFF8D', 'uniFF8E', 'uniFF8F', 'uniFF90', 'uniFF91', 'uniFF92', 'uniFF93', 'uniFF94', 'uniFF95', 'uniFF96', 'uniFF97', 'uniFF98', 'uniFF99', 'uniFF9A', 'uniFF9B', 'uniFF9C', 'uniFF9D', 'uniFF9E', 'uniFF9F', 'glyph12855', 'glyph12856', 'glyph12857', 'glyph12858', 'glyph12859', 'glyph12860', 'glyph12861', 'glyph12862', 'glyph12863', 'glyph12864', 'glyph12865', 'glyph12866', 'glyph12867', 'glyph12868', 'glyph12869', 'glyph12870', 'glyph12871', 'glyph12872', 'glyph12874', 'glyph12875', 'glyph12876', 'glyph12877', 'glyph12878', 'glyph12879', 'glyph12880', 'glyph12881', 'glyph12882', 'glyph12883', 'glyph12884', 'glyph12885', 'glyph12886', 'glyph12887', 'glyph12888', 'glyph12889', 'glyph12890', 'glyph12891', 'glyph12892', 'glyph12893', 'glyph12894', 'glyph12895', 'glyph12896', 'glyph12897', 'glyph12898', 'glyph12899', 'glyph12900', 'glyph12901', 'glyph12902', 'glyph12903', 'glyph12904', 'glyph12905', 'glyph12906', 'glyph12907', 'glyph12908', 'glyph12909', 'glyph12910', 'glyph12911', 'glyph12912', 'glyph12913', 'glyph12914', 'glyph12915', 'glyph12916', 'glyph12917', 'glyph12918', 'glyph12919', 'glyph12920', 'glyph12921', 'glyph12922', 'glyph12923', 'glyph12924', 'glyph12925', 'glyph12926', 'glyph12927', 'glyph12928', 'glyph12929', 'glyph12930', 'glyph12931', 'glyph12932', 'glyph12933', 'glyph12934', 'glyph12935', 'glyph12936', 'glyph12937', 'glyph12938', 'glyph12939', 'glyph12940', 'glyph12941', 'glyph12942', 'glyph12943', 'glyph12944', 'glyph12945', 'glyph12946', 'glyph12947', 'glyph12948', 'glyph12949', 'glyph12950', 'glyph12951', 'glyph12952', 'glyph12953', 'glyph12954', 'glyph12955', 'glyph12956', 'glyph12957', 'glyph12958', 'glyph12959', 'glyph12960', 'glyph12961', 'glyph12962', 'glyph12963', 'glyph12964', 'glyph12965', 'glyph12966', 'glyph12967', 'glyph12968', 'glyph12969', 'glyph12970', 'glyph12971', 'glyph12972', 'glyph12973', 'glyph12974', 'glyph12975', 'glyph12976', 'glyph12977', 'glyph12978', 'glyph12979', 'glyph12980', 'glyph12981', 'glyph12982', 'glyph12983', 'glyph12984', 'glyph12985', 'glyph12986', 'glyph12987', 'glyph12988', 'glyph12989', 'glyph12990', 'glyph12991', 'glyph12992', 'glyph12993', 'glyph12994', 'glyph12995', 'glyph12996', 'glyph12997', 'glyph12998', 'glyph12999', 'glyph13000', 'glyph13001', 'glyph13002', 'glyph13003', 'glyph13004', 'glyph13005', 'glyph13006', 'glyph13007', 'glyph13008', 'glyph13009', 'glyph13010', 'glyph13011', 'glyph13012', 'glyph13013', 'glyph13014', 'glyph13015', 'glyph13016', 'glyph13017', 'glyph13018', 'glyph13019', 'glyph13020', 'glyph13021', 'glyph13022', 'glyph13023', 'glyph13024', 'glyph13025', 'glyph13026', 'glyph13027', 'glyph13028', 'glyph13029', 'glyph13030', 'glyph13031', 'glyph13032', 'glyph13033', 'glyph13034', 'glyph13035', 'glyph13036', 'glyph13037', 'glyph13038', 'glyph13039', 'glyph13040', 'glyph13041', 'glyph13042', 'glyph13043', 'glyph13044', 'glyph13045', 'glyph13046', 'glyph13047', 'glyph13048', 'glyph13576', 'glyph13671', 'glyph13672', 'glyph13673', 'glyph13674', 'glyph13675', 'glyph13676', 'glyph13677', 'glyph13678', 'glyph13679', 'glyph13680', 'glyph13681', 'glyph13682', 'glyph13683', 'glyph13684', 'glyph13685', 'glyph13686', 'glyph13687', 'glyph13688', 'glyph13689', 'glyph13690', 'glyph13691', 'glyph13692', 'glyph13693', 'glyph13694', 'glyph13695', 'glyph13696', 'glyph13697', 'glyph13698', 'glyph13699', 'glyph13700', 'glyph13701', 'glyph13702', 'glyph13703', 'glyph13704', 'glyph13705', 'glyph13706', 'glyph13707', 'glyph13708', 'glyph13709', 'glyph13710', 'glyph13711', 'glyph13712', 'glyph13713', 'glyph13714', 'glyph13715', 'glyph13716', 'glyph13717', 'glyph13718', 'glyph13719', 'glyph13720', 'glyph13721', 'glyph13722', 'glyph13723', 'glyph13724', 'glyph13725', 'glyph13726', 'glyph13727', 'glyph13728', 'glyph13729', 'glyph13730', 'glyph13731', 'glyph13732', 'glyph13733', 'glyph13734', 'glyph13735', 'glyph13736', 'glyph13737', 'glyph13738', 'glyph13739', 'glyph13740', 'glyph13741', 'glyph13813', 'circumflex', 'uni2074', 'fraction', 'guilsinglleft', 'guilsinglright', 'dotlessi', 'mu', 'quotedblbase', 'quotesinglbase', 'ring'] [code: mono-outliers]</p>
+</span></li></ul></div></details>
+<details><summary>🔥 <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>The PANOSE numbers are incorrect for a monospaced font. Please set PANOSE Proportion to 9 (monospaced) [code: mono-bad-panose]</p>
+</span></li><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>Font is monospaced but 1423 glyphs (10.30%) have a different width. You should check the widths of: ['space', 'exclam', 'quotedbl', 'numbersign', 'dollar', 'percent', 'ampersand', 'quotesingle', 'parenleft', 'parenright', 'asterisk', 'plus', 'comma', 'hyphen', 'period', 'slash', 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'colon', 'semicolon', 'less', 'equal', 'greater', 'question', 'at', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'bracketleft', 'backslash', 'bracketright', 'asciicircum', 'underscore', 'grave', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'braceleft', 'bar', 'braceright', 'asciitilde', 'notsubset', 'uni2285', 'uni228A', 'uni228B', 'notelement', 'emptyset', 'uni2305', 'uni2306', 'circleplus', 'uni2296', 'circlemultiply', 'uni2226', 'uni2262', 'uni2243', 'congruent', 'approxequal', 'uni2276', 'uni2277', 'arrowboth', 'uni266E', 'musicalnotedbl', 'uni266C', 'uni2669', 'uni25B7', 'uni25B6', 'uni25C1', 'uni25C0', 'uni2197', 'uni2198', 'uni2196', 'uni2199', 'uni21C4', 'uni21E8', 'uni21E6', 'uni21E7', 'uni21E9', 'uni2934', 'uni2935', 'uni25C9', 'openbullet', 'bullet', 'uni2213', 'aleph', 'uni210F', 'uni2113', 'uni2127', 'endash', 'uni29FA', 'uni29FB', 'uni2664', 'spade', 'uni2662', 'diamond', 'uni2661', 'heart', 'uni2667', 'club', 'sigma1', 'uni25B1', 'uni22DA', 'uni22DB', 'onethird', 'twothirds', 'uni2155', 'uni25D0', 'uni25D1', 'uni25D2', 'uni25D3', 'exclamdbl', 'uni2047', 'uni2048', 'uni2049', 'uni1E3E', 'uni1E3F', 'uni01F8', 'uni01F9', 'Euro', 'exclamdown', 'currency', 'brokenbar', 'copyright', 'ordfeminine', 'guillemotleft', 'registered', 'macron', 'uni0304', 'uni00B2', 'uni00B3', 'periodcentered', 'cedilla', 'uni00B9', 'ordmasculine', 'guillemotright', 'onequarter', 'onehalf', 'threequarters', 'questiondown', 'Agrave', 'Aacute', 'Acircumflex', 'Atilde', 'Adieresis', 'Aring', 'AE', 'Ccedilla', 'Egrave', 'Eacute', 'Ecircumflex', 'Edieresis', 'Igrave', 'Iacute', 'Icircumflex', 'Idieresis', 'Eth', 'Ntilde', 'Ograve', 'Oacute', 'Ocircumflex', 'Otilde', 'Odieresis', 'Oslash', 'Ugrave', 'Uacute', 'Ucircumflex', 'Udieresis', 'Yacute', 'Thorn', 'germandbls', 'agrave', 'aacute', 'acircumflex', 'atilde', 'adieresis', 'aring', 'ae', 'ccedilla', 'egrave', 'eacute', 'ecircumflex', 'edieresis', 'igrave', 'iacute', 'icircumflex', 'idieresis', 'eth', 'ntilde', 'ograve', 'oacute', 'ocircumflex', 'otilde', 'odieresis', 'oslash', 'ugrave', 'uacute', 'ucircumflex', 'udieresis', 'yacute', 'thorn', 'ydieresis', 'Amacron', 'Imacron', 'Umacron', 'Emacron', 'Omacron', 'amacron', 'imacron', 'umacron', 'emacron', 'omacron', 'Aogonek', 'breve', 'Lslash', 'Lcaron', 'Sacute', 'Scaron', 'Scedilla', 'Tcaron', 'Zacute', 'Zcaron', 'Zdotaccent', 'aogonek', 'ogonek', 'lslash', 'lcaron', 'sacute', 'caron', 'scaron', 'scedilla', 'tcaron', 'zacute', 'hungarumlaut', 'zcaron', 'zdotaccent', 'Racute', 'Abreve', 'Lacute', 'Cacute', 'Ccaron', 'Eogonek', 'Ecaron', 'Dcaron', 'Nacute', 'Ncaron', 'Ohungarumlaut', 'Rcaron', 'Uring', 'Uhungarumlaut', 'uni0162', 'racute', 'abreve', 'lacute', 'cacute', 'ccaron', 'eogonek', 'ecaron', 'dcaron', 'dcroat', 'nacute', 'ncaron', 'ohungarumlaut', 'rcaron', 'uring', 'uhungarumlaut', 'uni0163', 'dotaccent', 'Ccircumflex', 'Gcircumflex', 'Hcircumflex', 'Jcircumflex', 'Scircumflex', 'Ubreve', 'ccircumflex', 'gcircumflex', 'hcircumflex', 'jcircumflex', 'scircumflex', 'ubreve', 'uni0271', 'uni028B', 'uni027E', 'uni0283', 'uni0292', 'uni026C', 'uni026E', 'uni0279', 'uni0288', 'uni0256', 'uni0273', 'uni027D', 'uni0282', 'uni0290', 'uni027B', 'uni026D', 'uni025F', 'uni0272', 'uni029D', 'uni028E', 'uni0261', 'eng', 'uni0270', 'uni0281', 'hbar', 'uni0295', 'uni0294', 'uni0266', 'uni0298', 'uni01C2', 'uni0253', 'uni0257', 'uni0284', 'uni0260', 'uni0193', 'oe', 'OE', 'uni0268', 'uni0289', 'uni0258', 'uni0275', 'uni0259', 'uni025C', 'uni025E', 'uni0250', 'uni026F', 'uni028A', 'uni0264', 'uni028C', 'uni0254', 'uni0251', 'uni0252', 'uni028D', 'uni0265', 'uni02A2', 'uni02A1', 'uni0255', 'uni0291', 'uni027A', 'uni0267', 'uni025A', 'aeacute', 'uni1F70', 'uni1F71', 'uni1F72', 'uni1F73', 'uni0361', 'uni02C8', 'uni02CC', 'uni02D0', 'uni02D1', 'uni0306', 'uni203F', 'uni030B', 'acutecomb', 'uni030F', 'uni030C', 'uni0302', 'uni02E5', 'uni02E6', 'uni02E7', 'uni02E8', 'uni02E9', 'uni0325', 'uni032C', 'uni0339', 'uni031C', 'uni031F', 'uni0320', 'uni0308', 'uni033D', 'uni0329', 'uni032F', 'uni02DE', 'uni0324', 'uni0330', 'uni033C', 'uni0334', 'uni031D', 'uni031E', 'uni0318', 'uni0319', 'uni032A', 'uni033A', 'uni033B', 'tilde', 'uni031A', 'uni2042', 'uni00A0', 'glyph01248', 'glyph01249', 'glyph01250', 'glyph01251', 'uni00AD', 'glyph01253', 'minus', 'glyph01255', 'glyph01256', 'glyph01257', 'glyph01258', 'glyph01259', 'glyph01260', 'glyph01261', 'glyph01263', 'glyph01264', 'glyph01265', 'glyph01266', 'glyph01267', 'glyph01268', 'glyph01269', 'glyph01270', 'glyph01271', 'glyph01272', 'glyph01273', 'glyph01274', 'glyph01275', 'glyph01276', 'glyph01277', 'glyph01278', 'glyph01279', 'glyph01280', 'glyph01281', 'glyph01282', 'glyph01283', 'glyph01284', 'glyph01285', 'glyph01286', 'glyph01287', 'glyph01288', 'glyph01289', 'glyph01290', 'glyph01291', 'glyph01292', 'glyph01293', 'glyph01294', 'glyph01295', 'glyph01296', 'glyph01297', 'glyph01298', 'glyph01299', 'glyph01300', 'glyph01301', 'glyph01302', 'glyph01303', 'glyph01304', 'glyph01305', 'glyph01306', 'gravecomb', 'glyph01308', 'glyph01309', 'glyph01310', 'glyph01311', 'glyph01312', 'glyph01313', 'glyph01314', 'glyph01315', 'glyph01316', 'glyph01317', 'glyph01318', 'glyph01319', 'glyph01320', 'glyph01321', 'glyph01322', 'glyph01323', 'glyph01324', 'glyph01325', 'glyph01326', 'glyph01327', 'glyph01328', 'glyph01329', 'glyph01330', 'glyph01331', 'glyph01332', 'glyph01333', 'glyph01334', 'glyph01335', 'glyph01336', 'glyph01337', 'glyph01338', 'glyph01339', 'glyph01340', 'glyph01341', 'glyph01342', 'glyph01343', 'glyph01344', 'glyph01345', 'glyph01346', 'glyph01347', 'glyph01348', 'glyph01349', 'glyph01350', 'glyph01351', 'glyph01352', 'glyph01353', 'glyph01354', 'glyph01355', 'glyph01356', 'glyph01357', 'glyph01358', 'glyph01359', 'glyph01360', 'glyph01361', 'glyph01362', 'glyph01363', 'glyph01364', 'glyph01365', 'glyph01366', 'glyph01367', 'glyph01368', 'glyph01369', 'glyph01370', 'glyph01371', 'glyph01372', 'glyph01373', 'glyph01374', 'glyph01375', 'glyph01376', 'glyph01377', 'glyph01378', 'glyph01379', 'glyph01380', 'glyph01381', 'glyph01382', 'glyph01383', 'glyph01384', 'glyph01385', 'glyph01386', 'glyph01387', 'glyph01388', 'glyph01389', 'glyph01390', 'glyph01392', 'glyph01393', 'glyph01394', 'glyph01395', 'glyph01401', 'glyph01402', 'glyph01403', 'glyph01404', 'glyph01405', 'glyph01406', 'glyph01407', 'glyph01408', 'glyph01409', 'glyph01410', 'glyph01412', 'glyph01413', 'glyph01414', 'glyph01415', 'glyph01416', 'glyph01417', 'glyph01418', 'glyph01420', 'glyph01422', 'glyph01423', 'glyph01424', 'glyph01425', 'glyph01426', 'glyph01427', 'glyph01428', 'glyph01430', 'glyph01431', 'glyph01432', 'glyph01433', 'glyph01434', 'glyph01436', 'glyph01438', 'glyph01440', 'glyph01441', 'glyph01442', 'glyph01443', 'glyph01445', 'glyph01446', 'glyph01447', 'glyph01448', 'glyph01449', 'glyph01450', 'glyph01451', 'glyph01452', 'glyph01454', 'glyph01455', 'glyph01456', 'glyph01457', 'glyph01460', 'glyph01463', 'glyph01466', 'glyph01467', 'glyph01468', 'glyph01469', 'glyph01470', 'glyph01471', 'glyph01472', 'glyph01473', 'glyph01474', 'glyph01475', 'glyph01476', 'glyph01477', 'glyph01478', 'glyph01479', 'glyph01480', 'glyph01481', 'glyph01482', 'glyph01483', 'glyph01484', 'glyph01485', 'glyph01486', 'glyph01487', 'glyph01488', 'glyph01489', 'glyph01490', 'glyph01491', 'glyph01492', 'glyph01493', 'glyph01494', 'glyph01495', 'glyph01496', 'glyph01497', 'glyph01498', 'glyph01499', 'glyph01500', 'glyph01501', 'glyph01502', 'glyph01503', 'glyph01504', 'glyph01505', 'glyph01506', 'glyph01508', 'glyph01509', 'glyph01510', 'glyph01511', 'glyph01512', 'glyph01513', 'glyph01514', 'glyph01516', 'glyph01517', 'glyph01518', 'glyph01519', 'glyph01520', 'glyph01521', 'glyph01522', 'glyph01523', 'glyph01524', 'glyph01525', 'glyph01526', 'glyph01527', 'glyph01528', 'glyph01529', 'glyph01530', 'glyph01531', 'glyph01532', 'glyph01533', 'glyph01534', 'glyph01535', 'glyph01536', 'glyph01537', 'glyph01538', 'glyph01539', 'glyph01540', 'glyph01541', 'glyph01542', 'glyph01543', 'glyph01544', 'glyph01545', 'glyph01546', 'glyph01547', 'glyph01548', 'glyph01549', 'glyph01550', 'glyph01551', 'glyph01552', 'glyph01553', 'glyph01554', 'glyph01555', 'glyph01556', 'glyph01557', 'glyph01558', 'glyph01559', 'glyph01560', 'glyph01561', 'glyph01562', 'glyph01563', 'glyph01564', 'glyph01565', 'glyph01566', 'glyph01567', 'glyph01568', 'glyph01569', 'glyph01570', 'glyph01571', 'glyph01572', 'glyph01573', 'glyph01574', 'glyph01575', 'glyph01576', 'glyph01577', 'glyph01578', 'glyph01579', 'glyph01580', 'glyph01581', 'glyph01582', 'glyph01583', 'glyph01584', 'glyph01585', 'glyph01586', 'glyph01587', 'glyph01588', 'glyph01589', 'glyph01590', 'glyph01591', 'glyph01592', 'glyph01593', 'glyph01594', 'glyph01595', 'glyph01596', 'glyph01597', 'glyph01598', 'glyph01599', 'glyph01600', 'glyph01601', 'glyph01602', 'glyph01603', 'glyph01604', 'glyph01609', 'glyph01610', 'glyph01611', 'glyph01612', 'glyph01613', 'glyph01615', 'glyph01616', 'glyph01617', 'glyph01618', 'glyph01619', 'glyph01620', 'glyph01621', 'glyph01622', 'glyph01623', 'glyph01624', 'glyph01625', 'glyph01626', 'glyph01627', 'glyph01628', 'glyph01629', 'glyph01630', 'glyph01631', 'glyph01632', 'glyph01633', 'glyph01635', 'glyph01636', 'glyph01638', 'glyph01639', 'glyph01640', 'glyph01641', 'glyph01642', 'glyph01643', 'glyph01644', 'glyph01645', 'glyph01646', 'glyph01650', 'glyph01651', 'glyph01652', 'glyph01653', 'glyph01654', 'glyph01655', 'glyph01656', 'glyph01657', 'glyph01658', 'glyph01659', 'glyph01660', 'glyph01661', 'glyph01662', 'glyph01663', 'glyph01664', 'glyph01665', 'glyph01666', 'glyph01667', 'glyph01668', 'glyph01669', 'glyph01670', 'glyph01671', 'glyph01672', 'glyph01673', 'glyph01674', 'glyph01675', 'glyph01676', 'glyph01677', 'glyph01678', 'glyph01679', 'glyph01680', 'glyph01681', 'glyph01683', 'glyph01684', 'glyph01685', 'glyph01686', 'glyph01687', 'glyph01688', 'glyph01689', 'glyph01690', 'glyph01691', 'glyph01692', 'glyph01693', 'glyph01694', 'glyph01695', 'glyph01696', 'glyph01697', 'glyph01698', 'glyph01699', 'glyph01700', 'glyph01701', 'glyph01702', 'glyph01703', 'glyph01704', 'glyph01705', 'glyph01706', 'glyph01707', 'glyph01708', 'glyph01709', 'glyph01710', 'glyph01711', 'glyph01712', 'glyph01713', 'glyph01714', 'glyph01715', 'glyph01716', 'glyph01717', 'glyph01718', 'glyph01719', 'glyph01720', 'glyph01721', 'glyph01722', 'glyph01723', 'glyph01724', 'glyph01725', 'glyph01726', 'glyph01727', 'glyph01728', 'glyph01729', 'glyph01730', 'glyph01731', 'glyph01732', 'glyph01733', 'glyph01734', 'glyph01735', 'glyph01736', 'glyph01737', 'glyph01738', 'glyph01739', 'glyph01740', 'glyph01741', 'glyph01742', 'glyph01743', 'glyph01744', 'glyph01745', 'glyph01746', 'glyph01747', 'glyph01748', 'glyph01749', 'glyph01750', 'glyph01751', 'glyph01752', 'glyph01753', 'glyph01754', 'glyph01755', 'glyph01756', 'glyph01757', 'glyph01758', 'glyph01759', 'glyph01760', 'glyph01761', 'glyph01762', 'glyph01763', 'glyph01764', 'glyph01765', 'glyph01766', 'glyph01767', 'glyph01768', 'glyph01769', 'glyph01770', 'glyph01771', 'glyph01772', 'glyph01773', 'glyph01774', 'glyph01775', 'glyph01776', 'glyph01777', 'glyph01778', 'glyph01779', 'glyph01780', 'glyph01781', 'glyph01782', 'glyph01783', 'glyph01784', 'glyph01785', 'glyph01786', 'glyph01787', 'glyph01788', 'glyph01789', 'glyph01790', 'glyph01791', 'glyph01792', 'glyph01793', 'glyph01794', 'glyph01795', 'glyph01796', 'glyph01797', 'glyph01798', 'glyph01799', 'glyph01800', 'glyph01801', 'glyph01802', 'glyph01803', 'glyph01804', 'glyph01805', 'glyph01806', 'glyph01807', 'glyph01808', 'glyph01809', 'glyph01810', 'glyph01811', 'glyph01812', 'glyph01813', 'glyph01814', 'glyph01815', 'glyph01816', 'glyph01817', 'glyph01818', 'glyph01819', 'glyph01820', 'glyph01821', 'glyph01822', 'glyph01823', 'glyph01824', 'glyph01825', 'glyph01826', 'glyph01827', 'glyph01830', 'glyph01831', 'glyph01832', 'glyph01833', 'glyph01834', 'glyph01835', 'glyph01836', 'glyph01837', 'glyph01838', 'glyph01839', 'glyph01840', 'glyph01841', 'glyph01842', 'glyph01843', 'glyph01844', 'glyph01845', 'glyph01846', 'glyph01847', 'glyph01848', 'glyph01849', 'glyph01850', 'glyph01851', 'glyph01852', 'glyph01853', 'glyph01855', 'glyph01856', 'glyph01857', 'glyph01858', 'glyph01859', 'glyph01860', 'glyph01861', 'glyph01862', 'glyph01863', 'glyph01864', 'glyph01865', 'glyph01866', 'glyph01867', 'glyph01868', 'glyph01869', 'glyph01870', 'glyph01871', 'glyph01872', 'glyph01873', 'glyph01874', 'glyph01875', 'glyph01876', 'glyph01877', 'glyph01878', 'glyph01879', 'glyph01880', 'glyph01881', 'glyph01882', 'glyph01883', 'glyph01884', 'glyph01885', 'glyph01886', 'glyph01887', 'glyph01888', 'glyph01889', 'glyph01890', 'glyph01891', 'glyph01892', 'glyph01893', 'glyph01894', 'glyph01895', 'glyph01896', 'glyph01897', 'glyph01898', 'glyph01899', 'glyph12253', 'uni203E', 'glyph12255', 'glyph12256', 'glyph12259', 'cent', 'sterling', 'yen', 'logicalnot', 'emdash', 'glyph12285', 'glyph12286', 'glyph12287', 'glyph12288', 'glyph12290', 'glyph12291', 'glyph12292', 'glyph12293', 'glyph12294', 'glyph12295', 'glyph12296', 'glyph12298', 'glyph12299', 'glyph12300', 'glyph12301', 'glyph12302', 'glyph12303', 'glyph12304', 'glyph12305', 'glyph12306', 'glyph12307', 'glyph12308', 'glyph12309', 'glyph12310', 'glyph12311', 'glyph12312', 'glyph12313', 'glyph12314', 'glyph12315', 'glyph12316', 'uniFF61', 'uniFF62', 'uniFF63', 'uniFF64', 'uniFF65', 'uniFF66', 'uniFF67', 'uniFF68', 'uniFF69', 'uniFF6A', 'uniFF6B', 'uniFF6C', 'uniFF6D', 'uniFF6E', 'uniFF6F', 'uniFF70', 'uniFF71', 'uniFF72', 'uniFF73', 'uniFF74', 'uniFF75', 'uniFF76', 'uniFF77', 'uniFF78', 'uniFF79', 'uniFF7A', 'uniFF7B', 'uniFF7C', 'uniFF7D', 'uniFF7E', 'uniFF7F', 'uniFF80', 'uniFF81', 'uniFF82', 'uniFF83', 'uniFF84', 'uniFF85', 'uniFF86', 'uniFF87', 'uniFF88', 'uniFF89', 'uniFF8A', 'uniFF8B', 'uniFF8C', 'uniFF8D', 'uniFF8E', 'uniFF8F', 'uniFF90', 'uniFF91', 'uniFF92', 'uniFF93', 'uniFF94', 'uniFF95', 'uniFF96', 'uniFF97', 'uniFF98', 'uniFF99', 'uniFF9A', 'uniFF9B', 'uniFF9C', 'uniFF9D', 'uniFF9E', 'uniFF9F', 'glyph12855', 'glyph12856', 'glyph12857', 'glyph12858', 'glyph12859', 'glyph12860', 'glyph12861', 'glyph12862', 'glyph12863', 'glyph12864', 'glyph12865', 'glyph12866', 'glyph12867', 'glyph12868', 'glyph12869', 'glyph12870', 'glyph12871', 'glyph12872', 'glyph12874', 'glyph12875', 'glyph12876', 'glyph12877', 'glyph12878', 'glyph12879', 'glyph12880', 'glyph12881', 'glyph12882', 'glyph12883', 'glyph12884', 'glyph12885', 'glyph12886', 'glyph12887', 'glyph12888', 'glyph12889', 'glyph12890', 'glyph12891', 'glyph12892', 'glyph12893', 'glyph12894', 'glyph12895', 'glyph12896', 'glyph12897', 'glyph12898', 'glyph12899', 'glyph12900', 'glyph12901', 'glyph12902', 'glyph12903', 'glyph12904', 'glyph12905', 'glyph12906', 'glyph12907', 'glyph12908', 'glyph12909', 'glyph12910', 'glyph12911', 'glyph12912', 'glyph12913', 'glyph12914', 'glyph12915', 'glyph12916', 'glyph12917', 'glyph12918', 'glyph12919', 'glyph12920', 'glyph12921', 'glyph12922', 'glyph12923', 'glyph12924', 'glyph12925', 'glyph12926', 'glyph12927', 'glyph12928', 'glyph12929', 'glyph12930', 'glyph12931', 'glyph12932', 'glyph12933', 'glyph12934', 'glyph12935', 'glyph12936', 'glyph12937', 'glyph12938', 'glyph12939', 'glyph12940', 'glyph12941', 'glyph12942', 'glyph12943', 'glyph12944', 'glyph12945', 'glyph12946', 'glyph12947', 'glyph12948', 'glyph12949', 'glyph12950', 'glyph12951', 'glyph12952', 'glyph12953', 'glyph12954', 'glyph12955', 'glyph12956', 'glyph12957', 'glyph12958', 'glyph12959', 'glyph12960', 'glyph12961', 'glyph12962', 'glyph12963', 'glyph12964', 'glyph12965', 'glyph12966', 'glyph12967', 'glyph12968', 'glyph12969', 'glyph12970', 'glyph12971', 'glyph12972', 'glyph12973', 'glyph12974', 'glyph12975', 'glyph12976', 'glyph12977', 'glyph12978', 'glyph12979', 'glyph12980', 'glyph12981', 'glyph12982', 'glyph12983', 'glyph12984', 'glyph12985', 'glyph12986', 'glyph12987', 'glyph12988', 'glyph12989', 'glyph12990', 'glyph12991', 'glyph12992', 'glyph12993', 'glyph12994', 'glyph12995', 'glyph12996', 'glyph12997', 'glyph12998', 'glyph12999', 'glyph13000', 'glyph13001', 'glyph13002', 'glyph13003', 'glyph13004', 'glyph13005', 'glyph13006', 'glyph13007', 'glyph13008', 'glyph13009', 'glyph13010', 'glyph13011', 'glyph13012', 'glyph13013', 'glyph13014', 'glyph13015', 'glyph13016', 'glyph13017', 'glyph13018', 'glyph13019', 'glyph13020', 'glyph13021', 'glyph13022', 'glyph13023', 'glyph13024', 'glyph13025', 'glyph13026', 'glyph13027', 'glyph13028', 'glyph13029', 'glyph13030', 'glyph13031', 'glyph13032', 'glyph13033', 'glyph13034', 'glyph13035', 'glyph13036', 'glyph13037', 'glyph13038', 'glyph13039', 'glyph13040', 'glyph13041', 'glyph13042', 'glyph13043', 'glyph13044', 'glyph13045', 'glyph13046', 'glyph13047', 'glyph13048', 'glyph13576', 'glyph13671', 'glyph13672', 'glyph13673', 'glyph13674', 'glyph13675', 'glyph13676', 'glyph13677', 'glyph13678', 'glyph13679', 'glyph13680', 'glyph13681', 'glyph13682', 'glyph13683', 'glyph13684', 'glyph13685', 'glyph13686', 'glyph13687', 'glyph13688', 'glyph13689', 'glyph13690', 'glyph13691', 'glyph13692', 'glyph13693', 'glyph13694', 'glyph13695', 'glyph13696', 'glyph13697', 'glyph13698', 'glyph13699', 'glyph13700', 'glyph13701', 'glyph13702', 'glyph13703', 'glyph13704', 'glyph13705', 'glyph13706', 'glyph13707', 'glyph13708', 'glyph13709', 'glyph13710', 'glyph13711', 'glyph13712', 'glyph13713', 'glyph13714', 'glyph13715', 'glyph13716', 'glyph13717', 'glyph13718', 'glyph13719', 'glyph13720', 'glyph13721', 'glyph13722', 'glyph13723', 'glyph13724', 'glyph13725', 'glyph13726', 'glyph13727', 'glyph13728', 'glyph13729', 'glyph13730', 'glyph13731', 'glyph13732', 'glyph13733', 'glyph13734', 'glyph13735', 'glyph13736', 'glyph13737', 'glyph13738', 'glyph13739', 'glyph13740', 'glyph13741'] [code: mono-outliers]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.dsig&gt; ⚠️⚠️⚠️⚠️</h2>
+<h3>Does the font have a DSIG table?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/dsig&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font has a digital signature (DSIG table) which is only required - even if only a placeholder - on old programs like MS Office 2013 in order to work properly.
+The current recommendation is to completely remove the DSIG table. [code: found-DSIG]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDPGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font has a digital signature (DSIG table) which is only required - even if only a placeholder - on old programs like MS Office 2013 in order to work properly.
+The current recommendation is to completely remove the DSIG table. [code: found-DSIG]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font has a digital signature (DSIG table) which is only required - even if only a placeholder - on old programs like MS Office 2013 in order to work properly.
+The current recommendation is to completely remove the DSIG table. [code: found-DSIG]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDPGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>This font has a digital signature (DSIG table) which is only required - even if only a placeholder - on old programs like MS Office 2013 in order to work properly.
+The current recommendation is to completely remove the DSIG table. [code: found-DSIG]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: fontbakery.profiles.gpos&gt; ⚠️⚠️</h2>
+<h3>Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/gpos_kerning_info&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDPGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDPGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>GPOS table lacks kerning information. [code: lacks-kern-info]</p>
+</span></li></ul></div></details>
+<h2>&lt;Section: Outline Correctness Checks&gt; ⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️⚠️</h2>
+<h3>Do outlines contain any jaggy segments?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_jaggy_segments&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* club (U+2663): B&lt;&lt;248.0,948.0&gt;-&lt;311.0,948.0&gt;-&lt;367.0,909.0&gt;&gt;/B&lt;&lt;367.0,909.0&gt;-&lt;279.0,989.0&gt;-&lt;279.0,1106.0&gt;&gt; = 7.419233439990026
+* club (U+2663): B&lt;&lt;746.0,1108.0&gt;-&lt;746.0,991.0&gt;-&lt;658.0,909.0&gt;&gt;/B&lt;&lt;658.0,909.0&gt;-&lt;713.0,948.0&gt;-&lt;781.0,948.0&gt;&gt; = 7.638528138086277
+* d (U+0064): L&lt;&lt;672.0,-57.0&gt;--&lt;672.0,109.0&gt;&gt;/B&lt;&lt;672.0,109.0&gt;-&lt;625.0,-88.0&gt;-&lt;459.0,-88.0&gt;&gt; = 13.418708081068738
+* dcaron (U+010F): L&lt;&lt;522.0,-57.0&gt;--&lt;522.0,109.0&gt;&gt;/B&lt;&lt;522.0,109.0&gt;-&lt;477.0,-88.0&gt;-&lt;358.0,-88.0&gt;&gt; = 12.86710414001905
+* dcroat (U+0111): L&lt;&lt;652.0,-57.0&gt;--&lt;652.0,109.0&gt;&gt;/B&lt;&lt;652.0,109.0&gt;-&lt;605.0,-88.0&gt;-&lt;439.0,-88.0&gt;&gt; = 13.418708081068738
+* m (U+006D): B&lt;&lt;524.0,1098.0&gt;-&lt;558.0,1034.0&gt;-&lt;559.0,928.0&gt;&gt;/B&lt;&lt;559.0,928.0&gt;-&lt;571.0,1014.0&gt;-&lt;601.0,1070.0&gt;&gt; = 8.48398199772108
+* m (U+006D): L&lt;&lt;238.0,1157.0&gt;--&lt;238.0,944.0&gt;&gt;/B&lt;&lt;238.0,944.0&gt;-&lt;267.0,1180.0&gt;-&lt;404.0,1180.0&gt;&gt; = 7.0054635135122405
+* thorn (U+00FE): L&lt;&lt;364.0,1700.0&gt;--&lt;364.0,1006.0&gt;&gt;/B&lt;&lt;364.0,1006.0&gt;-&lt;384.0,1097.0&gt;-&lt;464.0,1151.0&gt;&gt; = 12.395406833758457
+* u22AB8 (U+22AB8): B&lt;&lt;344.0,755.0&gt;-&lt;1088.0,768.0&gt;-&lt;1497.0,825.0&gt;&gt;/L&lt;&lt;1497.0,825.0&gt;--&lt;1491.0,825.0&gt;&gt; = 7.933884698262031
+* u23372 (U+23372): L&lt;&lt;1997.0,803.0&gt;--&lt;1260.0,803.0&gt;&gt;/L&lt;&lt;1260.0,803.0&gt;--&lt;1429.0,766.0&gt;&gt; = 12.349197703404412 and 571 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDPGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* u22AB8 (U+22AB8): B&lt;&lt;344.0,755.0&gt;-&lt;1088.0,768.0&gt;-&lt;1497.0,825.0&gt;&gt;/L&lt;&lt;1497.0,825.0&gt;--&lt;1491.0,825.0&gt;&gt; = 7.933884698262031
+* u23372 (U+23372): L&lt;&lt;1997.0,803.0&gt;--&lt;1260.0,803.0&gt;&gt;/L&lt;&lt;1260.0,803.0&gt;--&lt;1429.0,766.0&gt;&gt; = 12.349197703404412
+* u24E37 (U+24E37): B&lt;&lt;190.0,1433.0&gt;-&lt;251.0,1220.0&gt;-&lt;278.0,1031.0&gt;&gt;/L&lt;&lt;278.0,1031.0&gt;--&lt;278.0,1593.0&gt;&gt; = 8.13010235415596
+* u24E6A (U+24E6A): B&lt;&lt;192.0,1431.0&gt;-&lt;261.0,1206.0&gt;-&lt;287.0,1039.0&gt;&gt;/L&lt;&lt;287.0,1039.0&gt;--&lt;287.0,1585.0&gt;&gt; = 8.849258470701027
+* u24E8B (U+24E8B): B&lt;&lt;190.0,1433.0&gt;-&lt;251.0,1220.0&gt;-&lt;278.0,1031.0&gt;&gt;/L&lt;&lt;278.0,1031.0&gt;--&lt;278.0,1593.0&gt;&gt; = 8.13010235415596
+* u27DA0 (U+27DA0): L&lt;&lt;1742.0,80.0&gt;--&lt;1378.0,80.0&gt;&gt;/B&lt;&lt;1378.0,80.0&gt;-&lt;1671.0,31.0&gt;-&lt;1973.0,-53.0&gt;&gt; = 9.494029885758883
+* u28A99 (U+28A99): B&lt;&lt;882.0,1552.0&gt;-&lt;948.0,1359.0&gt;-&lt;985.0,1163.0&gt;&gt;/L&lt;&lt;985.0,1163.0&gt;--&lt;985.0,1733.0&gt;&gt; = 10.69023827649909
+* u28BC1 (U+28BC1): L&lt;&lt;817.0,-164.0&gt;--&lt;817.0,746.0&gt;&gt;/B&lt;&lt;817.0,746.0&gt;-&lt;766.0,545.0&gt;-&lt;700.0,383.0&gt;&gt; = 14.237280465761073
+* u298C6 (U+298C6): B&lt;&lt;664.0,569.0&gt;-&lt;719.0,423.0&gt;-&lt;749.0,234.0&gt;&gt;/B&lt;&lt;749.0,234.0&gt;-&lt;762.0,399.0&gt;-&lt;767.0,598.0&gt;&gt; = 13.52422929498866
+* uni3072 (U+3072): B&lt;&lt;1871.0,614.0&gt;-&lt;1659.0,868.0&gt;-&lt;1497.0,1217.0&gt;&gt;/B&lt;&lt;1497.0,1217.0&gt;-&lt;1601.0,898.0&gt;-&lt;1601.0,647.0&gt;&gt; = 6.843002551965728 and 552 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* club (U+2663): B&lt;&lt;248.0,948.0&gt;-&lt;311.0,948.0&gt;-&lt;367.0,909.0&gt;&gt;/B&lt;&lt;367.0,909.0&gt;-&lt;279.0,989.0&gt;-&lt;279.0,1106.0&gt;&gt; = 7.419233439990026
+* club (U+2663): B&lt;&lt;746.0,1108.0&gt;-&lt;746.0,993.0&gt;-&lt;660.0,907.0&gt;&gt;/B&lt;&lt;660.0,907.0&gt;-&lt;711.0,948.0&gt;-&lt;781.0,948.0&gt;&gt; = 6.203447901691829
+* m (U+006D): B&lt;&lt;500.0,1100.0&gt;-&lt;535.0,1037.0&gt;-&lt;541.0,928.0&gt;&gt;/B&lt;&lt;541.0,928.0&gt;-&lt;562.0,1041.0&gt;-&lt;617.0,1106.0&gt;&gt; = 13.678502533231256
+* m (U+006D): L&lt;&lt;196.0,1157.0&gt;--&lt;196.0,948.0&gt;&gt;/B&lt;&lt;196.0,948.0&gt;-&lt;247.0,1180.0&gt;-&lt;385.0,1180.0&gt;&gt; = 12.3979956544468
+* u23824 (U+23824): L&lt;&lt;271.0,-194.0&gt;--&lt;271.0,815.0&gt;&gt;/B&lt;&lt;271.0,815.0&gt;-&lt;197.0,514.0&gt;-&lt;89.0,304.0&gt;&gt; = 13.812082719954907
+* u2383D (U+2383D): L&lt;&lt;297.0,-194.0&gt;--&lt;297.0,855.0&gt;&gt;/B&lt;&lt;297.0,855.0&gt;-&lt;218.0,533.0&gt;-&lt;94.0,300.0&gt;&gt; = 13.784763973035735
+* u27DA0 (U+27DA0): L&lt;&lt;1732.0,82.0&gt;--&lt;1363.0,82.0&gt;&gt;/B&lt;&lt;1363.0,82.0&gt;-&lt;1613.0,29.0&gt;-&lt;1961.0,-88.0&gt;&gt; = 11.969486373068191
+* u28A99 (U+28A99): B&lt;&lt;871.0,1513.0&gt;-&lt;934.0,1351.0&gt;-&lt;977.0,1159.0&gt;&gt;/L&lt;&lt;977.0,1159.0&gt;--&lt;977.0,1722.0&gt;&gt; = 12.623563597702622
+* u28BC1 (U+28BC1): L&lt;&lt;801.0,-195.0&gt;--&lt;801.0,770.0&gt;&gt;/B&lt;&lt;801.0,770.0&gt;-&lt;750.0,565.0&gt;-&lt;684.0,399.0&gt;&gt; = 13.970461890040886
+* uni026F (U+026F): B&lt;&lt;518.0,6.0&gt;-&lt;483.0,70.0&gt;-&lt;477.0,178.0&gt;&gt;/B&lt;&lt;477.0,178.0&gt;-&lt;456.0,64.0&gt;-&lt;401.0,0.0&gt;&gt; = 13.617305470982393 and 238 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDPGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* u23824 (U+23824): L&lt;&lt;271.0,-194.0&gt;--&lt;271.0,815.0&gt;&gt;/B&lt;&lt;271.0,815.0&gt;-&lt;197.0,514.0&gt;-&lt;89.0,304.0&gt;&gt; = 13.812082719954907
+* u2383D (U+2383D): L&lt;&lt;297.0,-194.0&gt;--&lt;297.0,855.0&gt;&gt;/B&lt;&lt;297.0,855.0&gt;-&lt;218.0,533.0&gt;-&lt;94.0,300.0&gt;&gt; = 13.784763973035735
+* u27DA0 (U+27DA0): L&lt;&lt;1732.0,82.0&gt;--&lt;1363.0,82.0&gt;&gt;/B&lt;&lt;1363.0,82.0&gt;-&lt;1613.0,29.0&gt;-&lt;1961.0,-88.0&gt;&gt; = 11.969486373068191
+* u28A99 (U+28A99): B&lt;&lt;871.0,1513.0&gt;-&lt;934.0,1351.0&gt;-&lt;977.0,1159.0&gt;&gt;/L&lt;&lt;977.0,1159.0&gt;--&lt;977.0,1722.0&gt;&gt; = 12.623563597702622
+* u28BC1 (U+28BC1): L&lt;&lt;801.0,-195.0&gt;--&lt;801.0,770.0&gt;&gt;/B&lt;&lt;801.0,770.0&gt;-&lt;750.0,565.0&gt;-&lt;684.0,399.0&gt;&gt; = 13.970461890040886
+* uni3048 (U+3048): B&lt;&lt;1430.0,1062.0&gt;-&lt;1090.0,806.0&gt;-&lt;830.0,591.0&gt;&gt;/B&lt;&lt;830.0,591.0&gt;-&lt;932.0,641.0&gt;-&lt;1016.0,641.0&gt;&gt; = 13.474218217392243
+* uni3072 (U+3072): B&lt;&lt;1846.0,658.0&gt;-&lt;1620.0,909.0&gt;-&lt;1471.0,1219.0&gt;&gt;/B&lt;&lt;1471.0,1219.0&gt;-&lt;1559.0,932.0&gt;-&lt;1559.0,660.0&gt;&gt; = 8.624443425864628
+* uni3073 (U+3073): B&lt;&lt;1860.0,699.0&gt;-&lt;1620.0,896.0&gt;-&lt;1475.0,1143.0&gt;&gt;/B&lt;&lt;1475.0,1143.0&gt;-&lt;1559.0,877.0&gt;-&lt;1559.0,660.0&gt;&gt; = 12.889263353534131
+* uni3074 (U+3074): B&lt;&lt;1860.0,699.0&gt;-&lt;1620.0,896.0&gt;-&lt;1475.0,1143.0&gt;&gt;/B&lt;&lt;1475.0,1143.0&gt;-&lt;1559.0,877.0&gt;-&lt;1559.0,660.0&gt;&gt; = 12.889263353534131
+* uni3086 (U+3086): B&lt;&lt;389.0,1462.0&gt;-&lt;307.0,1116.0&gt;-&lt;305.0,672.0&gt;&gt;/B&lt;&lt;305.0,672.0&gt;-&lt;373.0,962.0&gt;-&lt;594.0,1167.0&gt;&gt; = 12.93837584088228 and 223 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have jaggy segments:
+* club (U+2663): B&lt;&lt;248.0,948.0&gt;-&lt;311.0,948.0&gt;-&lt;367.0,909.0&gt;&gt;/B&lt;&lt;367.0,909.0&gt;-&lt;279.0,989.0&gt;-&lt;279.0,1106.0&gt;&gt; = 7.419233439990026
+* club (U+2663): B&lt;&lt;746.0,1108.0&gt;-&lt;746.0,993.0&gt;-&lt;660.0,907.0&gt;&gt;/B&lt;&lt;660.0,907.0&gt;-&lt;711.0,948.0&gt;-&lt;781.0,948.0&gt;&gt; = 6.203447901691829
+* m (U+006D): B&lt;&lt;500.0,1100.0&gt;-&lt;535.0,1037.0&gt;-&lt;541.0,928.0&gt;&gt;/B&lt;&lt;541.0,928.0&gt;-&lt;562.0,1041.0&gt;-&lt;617.0,1106.0&gt;&gt; = 13.678502533231256
+* m (U+006D): L&lt;&lt;196.0,1157.0&gt;--&lt;196.0,948.0&gt;&gt;/B&lt;&lt;196.0,948.0&gt;-&lt;247.0,1180.0&gt;-&lt;385.0,1180.0&gt;&gt; = 12.3979956544468
+* u23824 (U+23824): L&lt;&lt;271.0,-194.0&gt;--&lt;271.0,815.0&gt;&gt;/B&lt;&lt;271.0,815.0&gt;-&lt;197.0,514.0&gt;-&lt;89.0,304.0&gt;&gt; = 13.812082719954907
+* u2383D (U+2383D): L&lt;&lt;297.0,-194.0&gt;--&lt;297.0,855.0&gt;&gt;/B&lt;&lt;297.0,855.0&gt;-&lt;218.0,533.0&gt;-&lt;94.0,300.0&gt;&gt; = 13.784763973035735
+* u27DA0 (U+27DA0): L&lt;&lt;1732.0,82.0&gt;--&lt;1363.0,82.0&gt;&gt;/B&lt;&lt;1363.0,82.0&gt;-&lt;1613.0,29.0&gt;-&lt;1961.0,-88.0&gt;&gt; = 11.969486373068191
+* u28A99 (U+28A99): B&lt;&lt;871.0,1513.0&gt;-&lt;934.0,1351.0&gt;-&lt;977.0,1159.0&gt;&gt;/L&lt;&lt;977.0,1159.0&gt;--&lt;977.0,1722.0&gt;&gt; = 12.623563597702622
+* u28BC1 (U+28BC1): L&lt;&lt;801.0,-195.0&gt;--&lt;801.0,770.0&gt;&gt;/B&lt;&lt;801.0,770.0&gt;-&lt;750.0,565.0&gt;-&lt;684.0,399.0&gt;&gt; = 13.970461890040886
+* uni026F (U+026F): B&lt;&lt;518.0,6.0&gt;-&lt;483.0,70.0&gt;-&lt;477.0,178.0&gt;&gt;/B&lt;&lt;477.0,178.0&gt;-&lt;456.0,64.0&gt;-&lt;401.0,0.0&gt;&gt; = 13.617305470982393 and 238 more.</p>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]</p>
+</span></li></ul></div></details>
+<h3>Do outlines contain any semi-vertical or semi-horizontal lines?</h3>
+<div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/outline_semi_vertical&gt;</div>
+
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>u26FF8 (U+26FF8): L&lt;&lt;100.0,-19.0&gt;--&lt;344.0,-17.0&gt;&gt;</li>
+<li>u273FE (U+273FE): L&lt;&lt;104.0,-33.0&gt;--&lt;358.0,-32.0&gt;&gt;</li>
+<li>uni4FF2 (U+4FF2): L&lt;&lt;1972.0,1315.0&gt;--&lt;1971.0,1133.0&gt;&gt;</li>
+<li>uni50B3 (U+50B3): L&lt;&lt;602.0,637.0&gt;--&lt;718.0,638.0&gt;&gt;</li>
+<li>uni5271 (U+5271): L&lt;&lt;1307.0,1110.0&gt;--&lt;1305.0,1408.0&gt;&gt;</li>
+<li>uni52F5 (U+52F5): L&lt;&lt;1957.0,1321.0&gt;--&lt;1955.0,1009.0&gt;&gt;</li>
+<li>uni52F8 (U+52F8): L&lt;&lt;1971.0,1331.0&gt;--&lt;1972.0,1183.0&gt;&gt;</li>
+<li>uni5306 (U+5306): L&lt;&lt;1682.0,1014.0&gt;--&lt;1684.0,1247.0&gt;&gt;</li>
+<li>uni5310 (U+5310): L&lt;&lt;1733.0,1308.0&gt;--&lt;1734.0,1429.0&gt;&gt;</li>
+<li>uni53A8 (U+53A8): L&lt;&lt;346.0,987.0&gt;--&lt;347.0,797.0&gt;&gt; and 90 more.</li>
+</ul>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDPGothic-Bold.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>u26FF8 (U+26FF8): L&lt;&lt;100.0,-19.0&gt;--&lt;344.0,-17.0&gt;&gt;</li>
+<li>u273FE (U+273FE): L&lt;&lt;104.0,-33.0&gt;--&lt;358.0,-32.0&gt;&gt;</li>
+<li>uni4FF2 (U+4FF2): L&lt;&lt;1972.0,1315.0&gt;--&lt;1971.0,1133.0&gt;&gt;</li>
+<li>uni50B3 (U+50B3): L&lt;&lt;602.0,637.0&gt;--&lt;718.0,638.0&gt;&gt;</li>
+<li>uni5271 (U+5271): L&lt;&lt;1307.0,1110.0&gt;--&lt;1305.0,1408.0&gt;&gt;</li>
+<li>uni52F5 (U+52F5): L&lt;&lt;1957.0,1321.0&gt;--&lt;1955.0,1009.0&gt;&gt;</li>
+<li>uni52F8 (U+52F8): L&lt;&lt;1971.0,1331.0&gt;--&lt;1972.0,1183.0&gt;&gt;</li>
+<li>uni5306 (U+5306): L&lt;&lt;1682.0,1014.0&gt;--&lt;1684.0,1247.0&gt;&gt;</li>
+<li>uni5310 (U+5310): L&lt;&lt;1733.0,1308.0&gt;--&lt;1734.0,1429.0&gt;&gt;</li>
+<li>uni53A8 (U+53A8): L&lt;&lt;346.0,987.0&gt;--&lt;347.0,797.0&gt;&gt; and 90 more.</li>
+</ul>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>uni2116 (U+2116): L&lt;&lt;273.0,711.0&gt;--&lt;279.0,-51.0&gt;&gt;</li>
+<li>uni4F3D (U+4F3D): L&lt;&lt;1249.0,1376.0&gt;--&lt;1248.0,1176.0&gt;&gt;</li>
+<li>uni521D (U+521D): L&lt;&lt;1898.0,1593.0&gt;--&lt;1897.0,1378.0&gt;&gt;</li>
+<li>uni5271 (U+5271): L&lt;&lt;1478.0,1491.0&gt;--&lt;1477.0,1325.0&gt;&gt;</li>
+<li>uni5292 (U+5292): L&lt;&lt;1966.0,1628.0&gt;--&lt;1965.0,1409.0&gt;&gt;</li>
+<li>uni529C (U+529C): L&lt;&lt;878.0,872.0&gt;--&lt;880.0,1125.0&gt;&gt;</li>
+<li>uni59C6 (U+59C6): L&lt;&lt;1665.0,1361.0&gt;--&lt;1666.0,1522.0&gt;&gt;</li>
+<li>uni59C6 (U+59C6): L&lt;&lt;1817.0,1331.0&gt;--&lt;1814.0,973.0&gt;&gt;</li>
+<li>uni5A1C (U+5A1C): L&lt;&lt;1034.0,1491.0&gt;--&lt;1035.0,1289.0&gt;&gt;</li>
+<li>uni5A1C (U+5A1C): L&lt;&lt;1195.0,845.0&gt;--&lt;1196.0,985.0&gt;&gt; and 48 more.</li>
+</ul>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZUDPGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>uni2116 (U+2116): L&lt;&lt;273.0,711.0&gt;--&lt;279.0,-51.0&gt;&gt;</li>
+<li>uni4F3D (U+4F3D): L&lt;&lt;1249.0,1376.0&gt;--&lt;1248.0,1176.0&gt;&gt;</li>
+<li>uni521D (U+521D): L&lt;&lt;1898.0,1593.0&gt;--&lt;1897.0,1378.0&gt;&gt;</li>
+<li>uni5271 (U+5271): L&lt;&lt;1478.0,1491.0&gt;--&lt;1477.0,1325.0&gt;&gt;</li>
+<li>uni5292 (U+5292): L&lt;&lt;1966.0,1628.0&gt;--&lt;1965.0,1409.0&gt;&gt;</li>
+<li>uni529C (U+529C): L&lt;&lt;878.0,872.0&gt;--&lt;880.0,1125.0&gt;&gt;</li>
+<li>uni59C6 (U+59C6): L&lt;&lt;1665.0,1361.0&gt;--&lt;1666.0,1522.0&gt;&gt;</li>
+<li>uni59C6 (U+59C6): L&lt;&lt;1817.0,1331.0&gt;--&lt;1814.0,973.0&gt;&gt;</li>
+<li>uni5A1C (U+5A1C): L&lt;&lt;1034.0,1491.0&gt;--&lt;1035.0,1289.0&gt;&gt;</li>
+<li>uni5A1C (U+5A1C): L&lt;&lt;1195.0,845.0&gt;--&lt;1196.0,985.0&gt;&gt; and 48 more.</li>
+</ul>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]</p>
+</span></li></ul></div></details>
+<details><summary>⚠️ <strong>fonts/ttf/BIZ-UDGothic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
+<ul>
+<li>uni2116 (U+2116): L&lt;&lt;273.0,711.0&gt;--&lt;279.0,-51.0&gt;&gt;</li>
+<li>uni4F3D (U+4F3D): L&lt;&lt;1249.0,1376.0&gt;--&lt;1248.0,1176.0&gt;&gt;</li>
+<li>uni521D (U+521D): L&lt;&lt;1898.0,1593.0&gt;--&lt;1897.0,1378.0&gt;&gt;</li>
+<li>uni5271 (U+5271): L&lt;&lt;1478.0,1491.0&gt;--&lt;1477.0,1325.0&gt;&gt;</li>
+<li>uni5292 (U+5292): L&lt;&lt;1966.0,1628.0&gt;--&lt;1965.0,1409.0&gt;&gt;</li>
+<li>uni529C (U+529C): L&lt;&lt;878.0,872.0&gt;--&lt;880.0,1125.0&gt;&gt;</li>
+<li>uni59C6 (U+59C6): L&lt;&lt;1665.0,1361.0&gt;--&lt;1666.0,1522.0&gt;&gt;</li>
+<li>uni59C6 (U+59C6): L&lt;&lt;1817.0,1331.0&gt;--&lt;1814.0,973.0&gt;&gt;</li>
+<li>uni5A1C (U+5A1C): L&lt;&lt;1034.0,1491.0&gt;--&lt;1035.0,1289.0&gt;&gt;</li>
+<li>uni5A1C (U+5A1C): L&lt;&lt;1195.0,845.0&gt;--&lt;1196.0,985.0&gt;&gt; and 48 more.</li>
+</ul>
+<p>Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]</p>
+</span></li></ul></div></details>
+                    </body>
+                </html>
