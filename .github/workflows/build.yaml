@@ -36,17 +36,6 @@ jobs:
       # Set the archive name to repo name + "-assets" e.g "MavenPro-assets"
       run: echo "ZIP_NAME=$(echo '${{ github.repository }}' | awk -F '/' '{print $2}')-fonts" >> $GITHUB_ENV
       # If a new release is cut, use the release tag to auto-bump the source files
-    - name: Bump release
-      if: github.event_name == 'release'
-      run: |
-        . venv/bin/activate
-        SRCS=$(yq e ".sources[]" sources/config.yaml)
-        TAG_NAME=${GITHUB_REF/refs\/tags\//}
-        echo "Bumping $SRCS to $TAG_NAME"
-        for src in $SRCS
-        do
-          bumpfontversion sources/$src --new-version $TAG_NAME;
-        done
     - name: Build font
       run: make build
     - name: Check with fontbakery
