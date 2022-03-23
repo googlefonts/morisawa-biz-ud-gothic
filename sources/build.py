@@ -19,6 +19,7 @@ IMPORT = Path('sources/ttf')
 TEMP = Path('temp')
 EXPORT = Path('fonts/ttf')
 SRC_IMPORT = Path("sources/extensions")
+VERSION = "1.001"
 
 for font in IMPORT.glob("*.ttf"):
     
@@ -69,26 +70,25 @@ for font in IMPORT.glob("*.ttf"):
     sourceTTF["name"].removeNames(platformID=1)
     sourceTTF["name"].removeNames(nameID=6,platformID=3, langID=1041)
 
-    versionString = sourceTTF["head"].fontRevision
     for platformID in [1033, 1041]:
         name = sourceTTF["name"].getDebugName(1)
 
         sourceTTF["name"].setName("Copyright 2022 The BIZ UDGothic Project Authors (https://github.com/googlefonts/morisawa-biz-ud-gothic)",0,3,1,platformID)
         sourceTTF["name"].setName(name,1,3,1,platformID)
+        sourceTTF["name"].setName("Version "+VERSION,5,3,1,platformID)
 
         if "Bold" in fontName: #aligning psnames with google standards. Shouldn't impact compatibility.
             sourceTTF["name"].setName(name.replace("BIZ ","BIZ")+"-Bold",6,3,1,platformID)
         else:
             sourceTTF["name"].setName(name.replace("BIZ ","BIZ")+"-Regular",6,3,1,platformID)
 
-        sourceTTF["name"].setName("Version "+str(versionString),5,3,1,platformID)
         if platformID == 1033:        
             sourceTTF["name"].setName(name+" is a trademark of Morisawa Inc.",7,3,1,platformID)
             sourceTTF["name"].setName("This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",13,3,1,platformID)
             sourceTTF["name"].setName("https://scripts.sil.org/OFL",14,3,1,platformID)
 
     # OS/2 Table modifications
-    versionString = sourceTTF["OS/2"].fsType = 0
+    sourceTTF["OS/2"].fsType = 0
 
     #Step 4 - Export updated source version
     sourceTTF.save(TEMP / outputTTF)
@@ -126,8 +126,10 @@ for font in IMPORT.glob("*.ttf"):
 
     if "P" not in fontName:
         finalVersion["post"].isFixedPitch = 1
-        finalVersion["OS/2"].panose.bProportion = 9
+        #finalVersion["OS/2"].panose.bProportion = 9
         
+    finalVersion["head"].fontRevision = float(VERSION)
+
     finalVersion["head"].flags = 0x000b
 
     newDSIG = newTable("DSIG")
