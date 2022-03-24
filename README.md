@@ -14,9 +14,9 @@
 [Shaping]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgooglefonts%2Fmorisawa-biz-ud-gothic%2Fgh-pages%2Fbadges%2FShapingChecks.json
 [Universal]: https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgooglefonts%2Fmorisawa-biz-ud-gothic%2Fgh-pages%2Fbadges%2FUniversal.json
 -->
-  モリサワのBIZ UDゴシックは、教育やビジネス文書作成などに活用できるよう、より多くの方にとって読みやすく使いやすいように設計されたユニバーサルデザインフォントです。読みやすさとデザインバランスに優れた、すっきりとしたUDゴシック書体で、漢字の省略できるハネやゲタを取ることで、文字をクリアに見せています。大きめな字面でも文字としてのかたちのバランスを損ねないよう、フトコロなどの空間を細かく調整しています。かなは漢字に比べてやや小ぶりに作られており、細いウエイトで長文を組むとほどよい抑揚が生まれます。
+モリサワのBIZ UDゴシックは、教育やビジネス文書作成などに活用できるよう、より多くの方にとって読みやすく使いやすいように設計されたユニバーサルデザインフォントです。読みやすさとデザインバランスに優れた、すっきりとしたUDゴシック書体で、漢字の省略できるハネやゲタを取ることで、文字をクリアに見せています。大きめな字面でも文字としてのかたちのバランスを損ねないよう、フトコロなどの空間を細かく調整しています。かなは漢字に比べてやや小ぶりに作られており、細いウエイトで長文を組むとほどよい抑揚が生まれます。
 
-    BIZ UD Gothic is a universal design typeface designed to be easy to read and ideal for education and business documentation. It is a highly legible and well-balanced design sans serif. In order to make the kanji more clear and identifiable, the letterforms are simplified by omitting hane (hook) and geta (the vertical lines extending beyond horizontal strokes at the bottom of kanji). Counters and other spaces are finely adjusted so that the overall balance of the type is not impaired even with the use in relatively large size. The kana are made slightly smaller than the kanji to give a good rhythm and flow when setting long texts in the lighter weights.
+BIZ UD Gothic is a universal design typeface designed to be easy to read and ideal for education and business documentation. It is a highly legible and well-balanced design sans serif. In order to make the kanji more clear and identifiable, the letterforms are simplified by omitting hane (hook) and geta (the vertical lines extending beyond horizontal strokes at the bottom of kanji). Counters and other spaces are finely adjusted so that the overall balance of the type is not impaired even with the use in relatively large size. The kana are made slightly smaller than the kanji to give a good rhythm and flow when setting long texts in the lighter weights.
 
 
 ## About Morisawa
