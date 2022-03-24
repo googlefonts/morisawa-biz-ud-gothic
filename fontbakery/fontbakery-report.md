@@ -76,16 +76,16 @@ But got:  "BIZ UDゴシック Bold" [code: bad-entry]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph12123
-	- glyph13283
-	- glyph13674
-	- glyph12121
-	- glyph01647
-	- glyph01815
-	- glyph13355
-	- glyph01831
-	- glyph01622
-	- glyph01582 
+	- glyph01570
+	- glyph01748
+	- glyph01771
+	- glyph01719
+	- glyph12227
+	- glyph12198
+	- glyph12110
+	- glyph01895
+	- glyph13577
+	- glyph01405 
 	- And 1285 more.
 
 Use -F or --full-lists to disable shortening of long lists.
@@ -216,16 +216,16 @@ But got:  "BIZ UDPゴシック Bold" [code: bad-entry]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph01060
-	- glyph01000
-	- glyph13450
-	- glyph13023
-	- glyph13425
-	- glyph00045
-	- glyph00891
-	- glyph00418
-	- glyph00143
-	- glyph00977 
+	- glyph13474
+	- glyph12957
+	- glyph00889
+	- glyph12254
+	- glyph13043
+	- glyph00512
+	- glyph00440
+	- glyph00316
+	- glyph00020
+	- glyph12002 
 	- And 1113 more.
 
 Use -F or --full-lists to disable shortening of long lists.
@@ -365,16 +365,16 @@ But got:  "BIZ UDゴシック" [code: bad-entry]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph12123
-	- glyph13283
-	- glyph13674
-	- glyph12121
-	- glyph01647
-	- glyph01815
-	- glyph13355
-	- glyph01831
-	- glyph01622
-	- glyph01582 
+	- glyph01570
+	- glyph01748
+	- glyph01771
+	- glyph01719
+	- glyph12227
+	- glyph12198
+	- glyph12110
+	- glyph01895
+	- glyph13577
+	- glyph01405 
 	- And 1285 more.
 
 Use -F or --full-lists to disable shortening of long lists.
@@ -505,16 +505,16 @@ But got:  "BIZ UDPゴシック" [code: bad-entry]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph01060
-	- glyph01000
-	- glyph13450
-	- glyph13023
-	- glyph13425
-	- glyph00045
-	- glyph00891
-	- glyph00418
-	- glyph00143
-	- glyph00977 
+	- glyph13474
+	- glyph12957
+	- glyph00889
+	- glyph12254
+	- glyph13043
+	- glyph00512
+	- glyph00440
+	- glyph00316
+	- glyph00020
+	- glyph12002 
 	- And 1113 more.
 
 Use -F or --full-lists to disable shortening of long lists.
