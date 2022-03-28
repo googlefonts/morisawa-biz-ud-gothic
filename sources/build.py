@@ -19,7 +19,7 @@ IMPORT = Path('sources/ttf')
 TEMP = Path('temp')
 EXPORT = Path('fonts/ttf')
 SRC_IMPORT = Path("sources/extensions")
-VERSION = "1.001"
+VERSION = "1.002"
 
 for font in IMPORT.glob("*.ttf"):
     
@@ -71,10 +71,9 @@ for font in IMPORT.glob("*.ttf"):
     sourceTTF["name"].removeNames(nameID=6,platformID=3, langID=1041)
 
     for platformID in [1033, 1041]:
-        name = sourceTTF["name"].getDebugName(1)
+        name = str(sourceTTF["name"].getName(1,3,1,platformID))
 
         sourceTTF["name"].setName("Copyright 2022 The BIZ UDGothic Project Authors (https://github.com/googlefonts/morisawa-biz-ud-gothic)",0,3,1,platformID)
-        sourceTTF["name"].setName(name,1,3,1,platformID)
         sourceTTF["name"].setName("Version "+VERSION,5,3,1,platformID)
 
         if "Bold" in fontName: #aligning psnames with google standards. Shouldn't impact compatibility.
