@@ -18,6 +18,7 @@
 
 BIZ UD Gothic is a universal design typeface designed to be easy to read and ideal for education and business documentation. It is a highly legible and well-balanced design sans serif. In order to make the kanji more clear and identifiable, the letterforms are simplified by omitting hane (hook) and geta (the vertical lines extending beyond horizontal strokes at the bottom of kanji). Counters and other spaces are finely adjusted so that the overall balance of the type is not impaired even with the use in relatively large size. The kana are made slightly smaller than the kanji to give a good rhythm and flow when setting long texts in the lighter weights.
 
+Download the latest version of the fonts [from the releases page](https://github.com/googlefonts/morisawa-biz-ud-gothic/releases).
 
 ## About Morisawa
 
