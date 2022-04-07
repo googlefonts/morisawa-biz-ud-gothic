@@ -19,7 +19,7 @@ IMPORT = Path('sources/ttf')
 TEMP = Path('temp')
 EXPORT = Path('fonts/ttf')
 SRC_IMPORT = Path("sources/extensions")
-VERSION = "1.002"
+VERSION = "1.01"
 
 for font in IMPORT.glob("*.ttf"):
     
