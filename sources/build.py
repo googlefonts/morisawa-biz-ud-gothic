@@ -138,21 +138,6 @@ for font in IMPORT.glob("*.ttf"):
     newDSIG.signatureRecords = []
     finalVersion.tables["DSIG"] = newDSIG
 
-    # Irritatingly, pyftmerge does not calculate the average character width correctly. It appears to simply average the xAvgCharWidth value in the two font files. However, given the heavy weighting of wider Japanese characters, we need to recalculate the average and insert it back into the font. 
-
-    width_sum = 0
-    count = 0
-    for glyph_id in finalVersion['glyf'].glyphs:  # At least .notdef must be present.
-        width = finalVersion['hmtx'].metrics[glyph_id][0]
-        # The OpenType spec doesn't exclude negative widths, but only positive
-        # widths seems to be the assumption in the wild?
-        if width > 0:
-            count += 1
-            width_sum += width
-
-    avgCharWidth = int(round(width_sum / count))
-    finalVersion["OS/2"].xAvgCharWidth = avgCharWidth
-
     finalVersion.save(EXPORT / str(outputTTF).replace("BIZ-","BIZ"))
 
 shutil.rmtree("temp")
