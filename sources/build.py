@@ -68,7 +68,6 @@ for font in IMPORT.glob("*.ttf"):
     # Step 2 - Some metadata changes to align with GF expectations
     # NAME table modifications
     sourceTTF["name"].removeNames(platformID=1)
-    sourceTTF["name"].removeNames(nameID=6,platformID=3, langID=1041)
 
     for platformID in [1033, 1041]:
         name = str(sourceTTF["name"].getName(1,3,1,platformID))
@@ -85,6 +84,8 @@ for font in IMPORT.glob("*.ttf"):
             sourceTTF["name"].setName(name+" is a trademark of Morisawa Inc.",7,3,1,platformID)
             sourceTTF["name"].setName("This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",13,3,1,platformID)
             sourceTTF["name"].setName("https://scripts.sil.org/OFL",14,3,1,platformID)
+
+    sourceTTF["name"].removeNames(nameID=6,platformID=3, langID=1041)
 
     # OS/2 Table modifications
     sourceTTF["OS/2"].fsType = 0
