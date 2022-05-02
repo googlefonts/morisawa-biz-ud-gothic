@@ -19,7 +19,7 @@ IMPORT = Path('sources/ttf')
 TEMP = Path('temp')
 EXPORT = Path('fonts/ttf')
 SRC_IMPORT = Path("sources/extensions")
-VERSION = "1.002"
+VERSION = "1.05"
 
 for font in IMPORT.glob("*.ttf"):
     
@@ -68,7 +68,6 @@ for font in IMPORT.glob("*.ttf"):
     # Step 2 - Some metadata changes to align with GF expectations
     # NAME table modifications
     sourceTTF["name"].removeNames(platformID=1)
-    sourceTTF["name"].removeNames(nameID=6,platformID=3, langID=1041)
 
     for platformID in [1033, 1041]:
         name = str(sourceTTF["name"].getName(1,3,1,platformID))
@@ -85,6 +84,8 @@ for font in IMPORT.glob("*.ttf"):
             sourceTTF["name"].setName(name+" is a trademark of Morisawa Inc.",7,3,1,platformID)
             sourceTTF["name"].setName("This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL",13,3,1,platformID)
             sourceTTF["name"].setName("https://scripts.sil.org/OFL",14,3,1,platformID)
+
+    sourceTTF["name"].removeNames(nameID=6,platformID=3, langID=1041)
 
     # OS/2 Table modifications
     sourceTTF["OS/2"].fsType = 0
@@ -138,20 +139,6 @@ for font in IMPORT.glob("*.ttf"):
     newDSIG.signatureRecords = []
     finalVersion.tables["DSIG"] = newDSIG
 
-    # Irritatingly, pyftmerge does not calculate the average character width correctly. It appears to simply average the xAvgCharWidth value in the two font files. However, given the heavy weighting of wider Japanese characters, we need to recalculate the average and insert it back into the font. 
-
-    width_sum = 0
-    count = 0
-    for glyph_id in finalVersion['glyf'].glyphs:  # At least .notdef must be present.
-        width = finalVersion['hmtx'].metrics[glyph_id][0]
-        # The OpenType spec doesn't exclude negative widths, but only positive
-        # widths seems to be the assumption in the wild?
-        if width > 0:
-            count += 1
-            width_sum += width
-
-    avgCharWidth = int(round(width_sum / count))
-    finalVersion["OS/2"].xAvgCharWidth = avgCharWidth
 
     finalVersion.save(EXPORT / str(outputTTF).replace("BIZ-","BIZ"))
 
