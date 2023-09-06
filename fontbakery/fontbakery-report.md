@@ -76,16 +76,16 @@ But got:  "BIZ UDゴシック" [code: bad-entry]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph01352
-	- glyph13797
-	- glyph01794
-	- glyph01413
-	- glyph12113
-	- glyph01590
-	- glyph13286
-	- glyph12228
-	- glyph12085
-	- glyph13794 
+	- glyph01374
+	- glyph13807
+	- glyph13718
+	- glyph12141
+	- glyph12109
+	- glyph01634
+	- glyph01545
+	- glyph01535
+	- glyph01419
+	- glyph13585 
 	- And 1285 more.
 
 Use -F or --full-lists to disable shortening of long lists.
@@ -153,158 +153,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
  * uni59C6 (U+59C6): L<<1665.0,1361.0>--<1666.0,1522.0>>
  * uni59C6 (U+59C6): L<<1817.0,1331.0>--<1814.0,973.0>>
  * uni5A1C (U+5A1C): L<<1034.0,1491.0>--<1035.0,1289.0>> and 49 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[22] BIZUDPGothic-Bold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check METADATA.pb includes production subsets.</summary><div>
-* [com.google.fonts/check/metadata/includes_production_subsets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/includes_production_subsets)
-
-* 💔 **ERROR** The condition <FontBakeryCondition:production_metadata> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-</div></details><details><summary>💔 <b>ERROR:</b> Version number has increased since previous release on Google Fonts?</summary><div>
-* [com.google.fonts/check/version_bump](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/version_bump)
-
-* 💔 **ERROR** The condition <FontBakeryCondition:api_gfonts_ttFont> had an error: FailedConditionError: The condition <FontBakeryCondition:remote_styles> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-</div></details><details><summary>💔 <b>ERROR:</b> Glyphs are similiar to Google Fonts version?</summary><div>
-* [com.google.fonts/check/production_glyphs_similarity](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity)
-
-* 💔 **ERROR** The condition <FontBakeryCondition:api_gfonts_ttFont> had an error: FailedConditionError: The condition <FontBakeryCondition:remote_styles> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-</div></details><details><summary>💔 <b>ERROR:</b> Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts.</summary><div>
-* [com.google.fonts/check/vertical_metrics_regressions](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics_regressions)
-
-* 💔 **ERROR** The condition <FontBakeryCondition:regular_remote_style> had an error: FailedConditionError: The condition <FontBakeryCondition:remote_styles> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-</div></details><details><summary>💔 <b>ERROR:</b> Check font follows the Google Fonts CJK vertical metric schema</summary><div>
-* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
-
-* 💔 **ERROR** The condition <FontBakeryCondition:remote_styles> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-</div></details><details><summary>💔 <b>ERROR:</b> Check if the vertical metrics of a CJK family are similar to the same family hosted on Google Fonts.</summary><div>
-* [com.google.fonts/check/cjk_vertical_metrics_regressions](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics_regressions)
-
-* 💔 **ERROR** The condition <FontBakeryCondition:regular_remote_style> had an error: FailedConditionError: The condition <FontBakeryCondition:remote_styles> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
-</div></details><details><summary>🔥 <b>FAIL:</b> Check `Google Fonts Latin Core` glyph coverage.</summary><div>
-* [com.google.fonts/check/glyph_coverage](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage)
-
-* 🔥 **FAIL** Missing required codepoints:
-
-	- 0x2215 (DIVISION SLASH)
- [code: missing-codepoints]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check name table: FONT_FAMILY_NAME entries.</summary><div>
-* [com.google.fonts/check/name/familyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/familyname)
-
-* 🔥 **FAIL** Entry [FONT_FAMILY_NAME(1):WINDOWS(3)] on the "name" table: Expected "BIZUDP Gothic" but got "BIZ UDPGothic". [code: mismatch]
-* 🔥 **FAIL** Entry [FONT_FAMILY_NAME(1):WINDOWS(3)] on the "name" table: Expected "BIZUDP Gothic" but got "BIZ UDPゴシック". [code: mismatch]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check name table: FULL_FONT_NAME entries.</summary><div>
-* [com.google.fonts/check/name/fullfontname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/fullfontname)
-
-* 🔥 **FAIL** [FULL_FONT_NAME(4):WINDOWS(3)]
-Expected: "BIZUDP Gothic Bold"
-But got:  "BIZ UDPGothic Bold" [code: bad-entry]
-* 🔥 **FAIL** [FULL_FONT_NAME(4):WINDOWS(3)]
-Expected: "BIZUDP Gothic Bold"
-But got:  "BIZ UDPゴシック Bold" [code: bad-entry]
-</div></details><details><summary>🔥 <b>FAIL:</b> Font enables smart dropout control in "prep" table instructions?</summary><div>
-* [com.google.fonts/check/smart_dropout](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/smart_dropout)
-
-* 🔥 **FAIL** The 'prep' table does not contain TrueType instructions enabling smart dropout control. To fix, export the font with autohinting enabled, or run ttfautohint on the font, or run the `gftools fix-nonhinting` script. [code: lacks-smart-dropout]
-</div></details><details><summary>🔥 <b>FAIL:</b> Font has correct post table version?</summary><div>
-* [com.google.fonts/check/post_table_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/post.html#com.google.fonts/check/post_table_version)
-
-* 🔥 **FAIL** Post table should be version 2 instead of 3.0. [code: post-table-version]
-</div></details><details><summary>⚠ <b>WARN:</b> Ensure files are not too large.</summary><div>
-* [com.google.fonts/check/file_size](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/file_size)
-
-* ⚠ **WARN** Font file is 4.4Mb; ideally it should be less than 1.0Mb [code: large-font]
-</div></details><details><summary>⚠ <b>WARN:</b> Is the Grid-fitting and Scan-conversion Procedure ('gasp') table set to optimize rendering?</summary><div>
-* [com.google.fonts/check/gasp](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/gasp)
-
-* ⚠ **WARN** The gasp table has a range of 7 that may be unneccessary. [code: non-ffff-range]
-</div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature?</summary><div>
-* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
-
-* ⚠ **WARN** GDEF table is missing, but it is mandatory to declare it on fonts that provide ligature glyphs because the caret (text cursor) positioning for each ligature must be provided in this table. [code: GDEF-missing]
-</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs</summary><div>
-* [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
-
-* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph00631
-	- glyph12981
-	- glyph13046
-	- glyph00275
-	- glyph11995
-	- glyph00410
-	- glyph00894
-	- glyph00533
-	- glyph01036
-	- glyph11972 
-	- And 1113 more.
-
-Use -F or --full-lists to disable shortening of long lists.
- [code: unreachable-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary><div>
-* [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count)
-
-* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
-* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
-
-The following glyphs do not have the recommended number of contours:
-
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-	- Glyph name: uni0404	Contours detected: 2	Expected: 1
-	- Glyph name: uni042D	Contours detected: 2	Expected: 1
-	- Glyph name: uni044D	Contours detected: 2	Expected: 1
-	- Glyph name: uni0454	Contours detected: 2	Expected: 1
-	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
-	- Glyph name: uni0404	Contours detected: 2	Expected: 1
-	- Glyph name: uni042D	Contours detected: 2	Expected: 1
-	- Glyph name: uni044D	Contours detected: 2	Expected: 1 
-	- And Glyph name: uni0454	Contours detected: 2	Expected: 1
- [code: contour-count]
-</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain chws and vchw features?</summary><div>
-* [com.google.fonts/check/cjk_chws_feature](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/cjk_chws_feature)
-
-* ⚠ **WARN** chws feature not found in font. Use chws_tool (https://github.com/googlefonts/chws_tool) to add it. [code: missing-chws-feature]
-* ⚠ **WARN** vchw feature not found in font. Use chws_tool (https://github.com/googlefonts/chws_tool) to add it. [code: missing-vchw-feature]
-</div></details><details><summary>⚠ <b>WARN:</b> Check if OS/2 xAvgCharWidth is correct.</summary><div>
-* [com.google.fonts/check/xavgcharwidth](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/os2.html#com.google.fonts/check/xavgcharwidth)
-
-* ⚠ **WARN** OS/2 xAvgCharWidth is 1814 but it should be 1964 which corresponds to the average of the widths of all glyphs in the font. [code: xAvgCharWidth-wrong]
-</div></details><details><summary>⚠ <b>WARN:</b> Does the font have a DSIG table?</summary><div>
-* [com.google.fonts/check/dsig](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/dsig.html#com.google.fonts/check/dsig)
-
-* ⚠ **WARN** This font has a digital signature (DSIG table) which is only required - even if only a placeholder - on old programs like MS Office 2013 in order to work properly.
-The current recommendation is to completely remove the DSIG table. [code: found-DSIG]
-</div></details><details><summary>⚠ <b>WARN:</b> Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</summary><div>
-* [com.google.fonts/check/gpos_kerning_info](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gpos.html#com.google.fonts/check/gpos_kerning_info)
-
-* ⚠ **WARN** GPOS table lacks kerning information. [code: lacks-kern-info]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments?</summary><div>
-* [com.google.fonts/check/outline_jaggy_segments](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments)
-
-* ⚠ **WARN** The following glyphs have jaggy segments:
-	* u22AB8 (U+22AB8): B<<344.0,755.0>-<1088.0,768.0>-<1497.0,825.0>>/L<<1497.0,825.0>--<1491.0,825.0>> = 7.933884698262031
-	* u23372 (U+23372): L<<1997.0,803.0>--<1260.0,803.0>>/L<<1260.0,803.0>--<1429.0,766.0>> = 12.349197703404412
-	* u24E37 (U+24E37): B<<190.0,1433.0>-<251.0,1220.0>-<278.0,1031.0>>/L<<278.0,1031.0>--<278.0,1593.0>> = 8.13010235415596
-	* u24E6A (U+24E6A): B<<192.0,1431.0>-<261.0,1206.0>-<287.0,1039.0>>/L<<287.0,1039.0>--<287.0,1585.0>> = 8.849258470701027
-	* u24E8B (U+24E8B): B<<190.0,1433.0>-<251.0,1220.0>-<278.0,1031.0>>/L<<278.0,1031.0>--<278.0,1593.0>> = 8.13010235415596
-	* u27DA0 (U+27DA0): L<<1742.0,80.0>--<1378.0,80.0>>/B<<1378.0,80.0>-<1671.0,31.0>-<1973.0,-53.0>> = 9.494029885758883
-	* u28A99 (U+28A99): B<<882.0,1552.0>-<948.0,1359.0>-<985.0,1163.0>>/L<<985.0,1163.0>--<985.0,1733.0>> = 10.69023827649909
-	* u28BC1 (U+28BC1): L<<817.0,-164.0>--<817.0,746.0>>/B<<817.0,746.0>-<766.0,545.0>-<700.0,383.0>> = 14.237280465761073
-	* u298C6 (U+298C6): B<<664.0,569.0>-<719.0,423.0>-<749.0,234.0>>/B<<749.0,234.0>-<762.0,399.0>-<767.0,598.0>> = 13.52422929498866
-	* uni3072 (U+3072): B<<1871.0,614.0>-<1659.0,868.0>-<1497.0,1217.0>>/B<<1497.0,1217.0>-<1601.0,898.0>-<1601.0,647.0>> = 6.843002551965728 and 552 more.
-
-Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines?</summary><div>
-* [com.google.fonts/check/outline_semi_vertical](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical)
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
- * florin (U+0192): L<<847.0,920.0>--<843.0,435.0>>
- * u26FF8 (U+26FF8): L<<100.0,-19.0>--<344.0,-17.0>>
- * u273FE (U+273FE): L<<104.0,-33.0>--<358.0,-32.0>>
- * uni4FF2 (U+4FF2): L<<1972.0,1315.0>--<1971.0,1133.0>>
- * uni50B3 (U+50B3): L<<602.0,637.0>--<718.0,638.0>>
- * uni5271 (U+5271): L<<1307.0,1110.0>--<1305.0,1408.0>>
- * uni52F5 (U+52F5): L<<1957.0,1321.0>--<1955.0,1009.0>>
- * uni52F8 (U+52F8): L<<1971.0,1331.0>--<1972.0,1183.0>>
- * uni5306 (U+5306): L<<1682.0,1014.0>--<1684.0,1247.0>>
- * uni5310 (U+5310): L<<1733.0,1308.0>--<1734.0,1429.0>> and 91 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]
 </div></details><br></div></details><details><summary><b>[22] BIZUDGothic-Bold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check METADATA.pb includes production subsets.</summary><div>
@@ -381,16 +229,16 @@ But got:  "BIZ UDゴシック Bold" [code: bad-entry]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph01352
-	- glyph13797
-	- glyph01794
-	- glyph01413
-	- glyph12113
-	- glyph01590
-	- glyph13286
-	- glyph12228
-	- glyph12085
-	- glyph13794 
+	- glyph01374
+	- glyph13807
+	- glyph13718
+	- glyph12141
+	- glyph12109
+	- glyph01634
+	- glyph01545
+	- glyph01535
+	- glyph01419
+	- glyph13585 
 	- And 1285 more.
 
 Use -F or --full-lists to disable shortening of long lists.
@@ -529,16 +377,16 @@ But got:  "BIZ UDPゴシック" [code: bad-entry]
 * [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
-	- glyph00631
-	- glyph12981
-	- glyph13046
-	- glyph00275
-	- glyph11995
-	- glyph00410
-	- glyph00894
-	- glyph00533
-	- glyph01036
-	- glyph11972 
+	- glyph12317
+	- glyph00433
+	- glyph00825
+	- glyph11972
+	- glyph00542
+	- glyph00380
+	- glyph00144
+	- glyph00047
+	- glyph00390
+	- glyph12237 
 	- And 1113 more.
 
 Use -F or --full-lists to disable shortening of long lists.
@@ -570,7 +418,7 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>⚠ <b>WARN:</b> Check if OS/2 xAvgCharWidth is correct.</summary><div>
 * [com.google.fonts/check/xavgcharwidth](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/os2.html#com.google.fonts/check/xavgcharwidth)
 
-* ⚠ **WARN** OS/2 xAvgCharWidth is 1801 but it should be 1963 which corresponds to the average of the widths of all glyphs in the font. [code: xAvgCharWidth-wrong]
+* ⚠ **WARN** OS/2 xAvgCharWidth is 1804 but it should be 1963 which corresponds to the average of the widths of all glyphs in the font. [code: xAvgCharWidth-wrong]
 </div></details><details><summary>⚠ <b>WARN:</b> Does the font have a DSIG table?</summary><div>
 * [com.google.fonts/check/dsig](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/dsig.html#com.google.fonts/check/dsig)
 
@@ -610,6 +458,158 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
  * uni59C6 (U+59C6): L<<1665.0,1361.0>--<1666.0,1522.0>>
  * uni59C6 (U+59C6): L<<1817.0,1331.0>--<1814.0,973.0>>
  * uni5A1C (U+5A1C): L<<1034.0,1491.0>--<1035.0,1289.0>> and 49 more.
+
+Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]
+</div></details><br></div></details><details><summary><b>[22] BIZUDPGothic-Bold.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check METADATA.pb includes production subsets.</summary><div>
+* [com.google.fonts/check/metadata/includes_production_subsets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/includes_production_subsets)
+
+* 💔 **ERROR** The condition <FontBakeryCondition:production_metadata> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+</div></details><details><summary>💔 <b>ERROR:</b> Version number has increased since previous release on Google Fonts?</summary><div>
+* [com.google.fonts/check/version_bump](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/version_bump)
+
+* 💔 **ERROR** The condition <FontBakeryCondition:api_gfonts_ttFont> had an error: FailedConditionError: The condition <FontBakeryCondition:remote_styles> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+</div></details><details><summary>💔 <b>ERROR:</b> Glyphs are similiar to Google Fonts version?</summary><div>
+* [com.google.fonts/check/production_glyphs_similarity](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity)
+
+* 💔 **ERROR** The condition <FontBakeryCondition:api_gfonts_ttFont> had an error: FailedConditionError: The condition <FontBakeryCondition:remote_styles> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+</div></details><details><summary>💔 <b>ERROR:</b> Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts.</summary><div>
+* [com.google.fonts/check/vertical_metrics_regressions](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics_regressions)
+
+* 💔 **ERROR** The condition <FontBakeryCondition:regular_remote_style> had an error: FailedConditionError: The condition <FontBakeryCondition:remote_styles> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+</div></details><details><summary>💔 <b>ERROR:</b> Check font follows the Google Fonts CJK vertical metric schema</summary><div>
+* [com.google.fonts/check/cjk_vertical_metrics](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics)
+
+* 💔 **ERROR** The condition <FontBakeryCondition:remote_styles> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+</div></details><details><summary>💔 <b>ERROR:</b> Check if the vertical metrics of a CJK family are similar to the same family hosted on Google Fonts.</summary><div>
+* [com.google.fonts/check/cjk_vertical_metrics_regressions](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/cjk_vertical_metrics_regressions)
+
+* 💔 **ERROR** The condition <FontBakeryCondition:regular_remote_style> had an error: FailedConditionError: The condition <FontBakeryCondition:remote_styles> had an error: JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+</div></details><details><summary>🔥 <b>FAIL:</b> Check `Google Fonts Latin Core` glyph coverage.</summary><div>
+* [com.google.fonts/check/glyph_coverage](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage)
+
+* 🔥 **FAIL** Missing required codepoints:
+
+	- 0x2215 (DIVISION SLASH)
+ [code: missing-codepoints]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check name table: FONT_FAMILY_NAME entries.</summary><div>
+* [com.google.fonts/check/name/familyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/familyname)
+
+* 🔥 **FAIL** Entry [FONT_FAMILY_NAME(1):WINDOWS(3)] on the "name" table: Expected "BIZUDP Gothic" but got "BIZ UDPGothic". [code: mismatch]
+* 🔥 **FAIL** Entry [FONT_FAMILY_NAME(1):WINDOWS(3)] on the "name" table: Expected "BIZUDP Gothic" but got "BIZ UDPゴシック". [code: mismatch]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check name table: FULL_FONT_NAME entries.</summary><div>
+* [com.google.fonts/check/name/fullfontname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/fullfontname)
+
+* 🔥 **FAIL** [FULL_FONT_NAME(4):WINDOWS(3)]
+Expected: "BIZUDP Gothic Bold"
+But got:  "BIZ UDPGothic Bold" [code: bad-entry]
+* 🔥 **FAIL** [FULL_FONT_NAME(4):WINDOWS(3)]
+Expected: "BIZUDP Gothic Bold"
+But got:  "BIZ UDPゴシック Bold" [code: bad-entry]
+</div></details><details><summary>🔥 <b>FAIL:</b> Font enables smart dropout control in "prep" table instructions?</summary><div>
+* [com.google.fonts/check/smart_dropout](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/smart_dropout)
+
+* 🔥 **FAIL** The 'prep' table does not contain TrueType instructions enabling smart dropout control. To fix, export the font with autohinting enabled, or run ttfautohint on the font, or run the `gftools fix-nonhinting` script. [code: lacks-smart-dropout]
+</div></details><details><summary>🔥 <b>FAIL:</b> Font has correct post table version?</summary><div>
+* [com.google.fonts/check/post_table_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/post.html#com.google.fonts/check/post_table_version)
+
+* 🔥 **FAIL** Post table should be version 2 instead of 3.0. [code: post-table-version]
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure files are not too large.</summary><div>
+* [com.google.fonts/check/file_size](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/file_size)
+
+* ⚠ **WARN** Font file is 4.4Mb; ideally it should be less than 1.0Mb [code: large-font]
+</div></details><details><summary>⚠ <b>WARN:</b> Is the Grid-fitting and Scan-conversion Procedure ('gasp') table set to optimize rendering?</summary><div>
+* [com.google.fonts/check/gasp](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/gasp)
+
+* ⚠ **WARN** The gasp table has a range of 7 that may be unneccessary. [code: non-ffff-range]
+</div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature?</summary><div>
+* [com.google.fonts/check/ligature_carets](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets)
+
+* ⚠ **WARN** GDEF table is missing, but it is mandatory to declare it on fonts that provide ligature glyphs because the caret (text cursor) positioning for each ligature must be provided in this table. [code: GDEF-missing]
+</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs</summary><div>
+* [com.google.fonts/check/unreachable_glyphs](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs)
+
+* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
+	- glyph12317
+	- glyph00433
+	- glyph00825
+	- glyph11972
+	- glyph00542
+	- glyph00380
+	- glyph00144
+	- glyph00047
+	- glyph00390
+	- glyph12237 
+	- And 1113 more.
+
+Use -F or --full-lists to disable shortening of long lists.
+ [code: unreachable-glyphs]
+</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours.</summary><div>
+* [com.google.fonts/check/contour_count](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count)
+
+* ⚠ **WARN** This font has a 'Soft Hyphen' character (codepoint 0x00AD) which is supposed to be zero-width and invisible, and is used to mark a hyphenation possibility within a word in the absence of or overriding dictionary hyphenation. It is mostly an obsolete mechanism now, and the character is only included in fonts for legacy codepage coverage. [code: softhyphen]
+* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
+
+The following glyphs do not have the recommended number of contours:
+
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
+	- Glyph name: uni0404	Contours detected: 2	Expected: 1
+	- Glyph name: uni042D	Contours detected: 2	Expected: 1
+	- Glyph name: uni044D	Contours detected: 2	Expected: 1
+	- Glyph name: uni0454	Contours detected: 2	Expected: 1
+	- Glyph name: uni00AD	Contours detected: 1	Expected: 0
+	- Glyph name: uni0404	Contours detected: 2	Expected: 1
+	- Glyph name: uni042D	Contours detected: 2	Expected: 1
+	- Glyph name: uni044D	Contours detected: 2	Expected: 1 
+	- And Glyph name: uni0454	Contours detected: 2	Expected: 1
+ [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font contain chws and vchw features?</summary><div>
+* [com.google.fonts/check/cjk_chws_feature](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/cjk_chws_feature)
+
+* ⚠ **WARN** chws feature not found in font. Use chws_tool (https://github.com/googlefonts/chws_tool) to add it. [code: missing-chws-feature]
+* ⚠ **WARN** vchw feature not found in font. Use chws_tool (https://github.com/googlefonts/chws_tool) to add it. [code: missing-vchw-feature]
+</div></details><details><summary>⚠ <b>WARN:</b> Check if OS/2 xAvgCharWidth is correct.</summary><div>
+* [com.google.fonts/check/xavgcharwidth](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/os2.html#com.google.fonts/check/xavgcharwidth)
+
+* ⚠ **WARN** OS/2 xAvgCharWidth is 1814 but it should be 1964 which corresponds to the average of the widths of all glyphs in the font. [code: xAvgCharWidth-wrong]
+</div></details><details><summary>⚠ <b>WARN:</b> Does the font have a DSIG table?</summary><div>
+* [com.google.fonts/check/dsig](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/dsig.html#com.google.fonts/check/dsig)
+
+* ⚠ **WARN** This font has a digital signature (DSIG table) which is only required - even if only a placeholder - on old programs like MS Office 2013 in order to work properly.
+The current recommendation is to completely remove the DSIG table. [code: found-DSIG]
+</div></details><details><summary>⚠ <b>WARN:</b> Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value</summary><div>
+* [com.google.fonts/check/gpos_kerning_info](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/gpos.html#com.google.fonts/check/gpos_kerning_info)
+
+* ⚠ **WARN** GPOS table lacks kerning information. [code: lacks-kern-info]
+</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments?</summary><div>
+* [com.google.fonts/check/outline_jaggy_segments](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments)
+
+* ⚠ **WARN** The following glyphs have jaggy segments:
+	* u22AB8 (U+22AB8): B<<344.0,755.0>-<1088.0,768.0>-<1497.0,825.0>>/L<<1497.0,825.0>--<1491.0,825.0>> = 7.933884698262031
+	* u23372 (U+23372): L<<1997.0,803.0>--<1260.0,803.0>>/L<<1260.0,803.0>--<1429.0,766.0>> = 12.349197703404412
+	* u24E37 (U+24E37): B<<190.0,1433.0>-<251.0,1220.0>-<278.0,1031.0>>/L<<278.0,1031.0>--<278.0,1593.0>> = 8.13010235415596
+	* u24E6A (U+24E6A): B<<192.0,1431.0>-<261.0,1206.0>-<287.0,1039.0>>/L<<287.0,1039.0>--<287.0,1585.0>> = 8.849258470701027
+	* u24E8B (U+24E8B): B<<190.0,1433.0>-<251.0,1220.0>-<278.0,1031.0>>/L<<278.0,1031.0>--<278.0,1593.0>> = 8.13010235415596
+	* u27DA0 (U+27DA0): L<<1742.0,80.0>--<1378.0,80.0>>/B<<1378.0,80.0>-<1671.0,31.0>-<1973.0,-53.0>> = 9.494029885758883
+	* u28A99 (U+28A99): B<<882.0,1552.0>-<948.0,1359.0>-<985.0,1163.0>>/L<<985.0,1163.0>--<985.0,1733.0>> = 10.69023827649909
+	* u28BC1 (U+28BC1): L<<817.0,-164.0>--<817.0,746.0>>/B<<817.0,746.0>-<766.0,545.0>-<700.0,383.0>> = 14.237280465761073
+	* u298C6 (U+298C6): B<<664.0,569.0>-<719.0,423.0>-<749.0,234.0>>/B<<749.0,234.0>-<762.0,399.0>-<767.0,598.0>> = 13.52422929498866
+	* uni3072 (U+3072): B<<1871.0,614.0>-<1659.0,868.0>-<1497.0,1217.0>>/B<<1497.0,1217.0>-<1601.0,898.0>-<1601.0,647.0>> = 6.843002551965728 and 552 more.
+
+Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]
+</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines?</summary><div>
+* [com.google.fonts/check/outline_semi_vertical](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical)
+
+* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
+ * florin (U+0192): L<<847.0,920.0>--<843.0,435.0>>
+ * u26FF8 (U+26FF8): L<<100.0,-19.0>--<344.0,-17.0>>
+ * u273FE (U+273FE): L<<104.0,-33.0>--<358.0,-32.0>>
+ * uni4FF2 (U+4FF2): L<<1972.0,1315.0>--<1971.0,1133.0>>
+ * uni50B3 (U+50B3): L<<602.0,637.0>--<718.0,638.0>>
+ * uni5271 (U+5271): L<<1307.0,1110.0>--<1305.0,1408.0>>
+ * uni52F5 (U+52F5): L<<1957.0,1321.0>--<1955.0,1009.0>>
+ * uni52F8 (U+52F8): L<<1971.0,1331.0>--<1972.0,1183.0>>
+ * uni5306 (U+5306): L<<1682.0,1014.0>--<1684.0,1247.0>>
+ * uni5310 (U+5310): L<<1733.0,1308.0>--<1734.0,1429.0>> and 91 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-semi-vertical]
 </div></details><br></div></details>
