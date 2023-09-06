@@ -1,23 +1,12 @@
 {
-.appVersion = "1342";
+.appVersion = "3151";
 DisplayStrings = (
 "/Hbar/Iogonek/Kcommaaccent/Eng/Tbar/Uogonek/iogonek/kcommaaccent/longs/tbar/uogonek/fi/fl/Gheupturn-cy/Dzhe-cy \012/Lje-cy/Nje-cy/E-cy/Tshe-cy/Dje-cy/gheupturn-cy/dzhe-cy/lje-cy/nje-cy/e-cy \012/tshe-cy/dje-cy/florin",
-"/Hbar/Iogonek/Kcommaaccent/Eng/Tbar/Uogonek/iogonek/kcommaaccent/longs/tbar/uogonek/fi/fl \012/Gheupturn-cy/Dzhe-cy/Lje-cy/Nje-cy/E-cy/Tshe-cy/Dje-cy/gheupturn-cy \012/dzhe-cy/lje-cy/nje-cy/e-cy/tshe-cy/dje-cy/florin"
+"/Hbar/Iogonek/Kcommaaccent/Eng/Tbar/Uogonek/iogonek/kcommaaccent/longs/tbar/uogonek/fi/fl \012/Gheupturn-cy/Dzhe-cy/Lje-cy/Nje-cy/E-cy/Tshe-cy/Dje-cy/gheupturn-cy \012/dzhe-cy/lje-cy/nje-cy/e-cy/tshe-cy/dje-cy/florin",
+"/greaterequal/lessequal"
 );
 copyright = "Font Copyright Copyright 2019 Morisawa Inc. All rights reserved.";
 customParameters = (
-{
-name = trademark;
-value = "BIZ UDGothic is a trademark of Morisawa Inc.";
-},
-{
-name = license;
-value = "Google font";
-},
-{
-name = vendorID;
-value = MRSW;
-},
 {
 name = panose;
 value = (
@@ -73,6 +62,31 @@ value = (
 {
 name = fsType;
 value = (
+);
+},
+{
+name = trademark;
+value = "BIZ UDGothic is a trademark of Morisawa Inc.";
+},
+{
+name = license;
+value = "Google font";
+},
+{
+name = vendorID;
+value = MRSW;
+},
+{
+name = Axes;
+value = (
+{
+Name = Weight;
+Tag = wght;
+},
+{
+Name = Width;
+Tag = wdth;
+}
 );
 }
 );
@@ -11385,7 +11399,7 @@ unicode = 0192;
 {
 color = 6;
 glyphname = greaterequal;
-lastChange = "2022-04-07 18:21:44 +0000";
+lastChange = "2023-09-06 18:30:56 +0000";
 layers = (
 {
 background = {
@@ -11444,7 +11458,7 @@ unicode = 2265;
 {
 color = 6;
 glyphname = lessequal;
-lastChange = "2022-04-07 18:21:44 +0000";
+lastChange = "2023-09-06 18:30:46 +0000";
 layers = (
 {
 background = {
@@ -11476,21 +11490,21 @@ paths = (
 {
 closed = 1;
 nodes = (
-"343 364 LINE",
-"1700 364 LINE",
-"1700 208 LINE",
-"343 208 LINE"
+"342 364 LINE",
+"1699 364 LINE",
+"1699 208 LINE",
+"342 208 LINE"
 );
 },
 {
 closed = 1;
 nodes = (
-"1700 1393 LINE",
-"1700 1211 LINE",
-"751 928 LINE",
-"1700 645 LINE",
-"1700 463 LINE",
-"314 928 LINE"
+"1699 1393 LINE",
+"1699 1211 LINE",
+"750 928 LINE",
+"1699 645 LINE",
+"1699 463 LINE",
+"313 928 LINE"
 );
 }
 );
