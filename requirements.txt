@@ -54,7 +54,7 @@ opentype-sanitizer==8.2.1
 opentypespec==1.8.4
 Pillow==9.0.1
 pip-api==0.0.29
-protobuf==3.19.4
+protobuf==3.19.5
 psutil==5.9.0
 pybind11==2.9.1
 pybrowserstack-screenshots==0.1
