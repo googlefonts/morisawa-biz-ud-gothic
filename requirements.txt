@@ -94,7 +94,7 @@ ufolint==1.2.0
 uharfbuzz==0.21.0
 unicodedata2==14.0.0
 Unidecode==1.3.4
-urllib3==1.26.8
+urllib3==1.26.17
 vharfbuzz==0.1.1
 vttLib==0.11.0
 wrapt==1.14.0
