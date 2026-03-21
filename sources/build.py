@@ -122,7 +122,9 @@ for font in IMPORT.glob("*.ttf"):
     cmap0_3_4.cmap = finalVersion["cmap"].getcmap(3,1).cmap #copying from merged version
 
     finalVersion["cmap"].tables.append(cmap0_3_4)
-    finalVersion["cmap"].tables.append(sourceTTF["cmap"].getcmap(0,5))
+    # format_14 (platformID=0, platEncID=5 UVS) should not be duplicated
+    if not any((table.platformID == 0 and table.platEncID == 5) for table in finalVersion["cmap"].tables):
+        finalVersion["cmap"].tables.append(sourceTTF["cmap"].getcmap(0,5))
 
     if "P" not in fontName:
         finalVersion["post"].isFixedPitch = 1
