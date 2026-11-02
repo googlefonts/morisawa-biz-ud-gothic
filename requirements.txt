@@ -5,7 +5,7 @@ babelfont==2.0.2
 beautifulsoup4==4.10.0
 beziers==0.4.0
 booleanOperations==0.9.0
-Brotli==1.0.9
+Brotli==1.2.1
 browserstack-local==1.2.2
 bump2version==1.0.1
 bumpfontversion==0.3.0
